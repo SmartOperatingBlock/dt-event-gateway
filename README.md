@@ -1,13 +1,8 @@
-# Template for Kotlin projects
-## Setup
+# Digital Twins Event Gateway
 
-In order to use this template you need to do the following steps:
-1. modify project name in `settings.gradle.kts`
-2. [Optional] set up branch protection and a Personal Access Token and modify it in the `release` job for `semantic release`([more here](https://semantic-release.gitbook.io/semantic-release/recipes/ci-configurations/github-actions#pushing-package.json-changes-to-a-master-branch))
+![workflow status](https://github.com/smartoperatingblock/dt-event-gateway/actions/workflows/build-and-deploy.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Apps to install when used outside this organization
-- CodeCov
-- Renovate Bot
-- GitGuardian
-- Mergify
-- SonarCloud
+The Event Gateway for Digital Twins.
+
+It's responsible to receive events from the Digital Twin Layer and to propagate them to microservices through the kafka broker.
