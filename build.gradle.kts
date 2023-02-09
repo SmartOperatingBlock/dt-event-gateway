@@ -31,6 +31,7 @@ dependencies {
     implementation(libs.kafka.json)
     implementation(libs.kafka.streams.json.serde)
     implementation(libs.logback)
+    implementation(libs.signalr)
     testImplementation(libs.bundles.kotlin.testing)
 }
 
