@@ -1,0 +1,6 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/dt-event-gateway/[root]/index.html
+$dokka.location://main/#/PointingToDeclaration/dt-event-gateway/[root]/main.html
+
+
