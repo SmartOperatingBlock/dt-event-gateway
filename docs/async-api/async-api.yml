@@ -1,3 +1,8 @@
-asyncapi: 2.5.0
+asyncapi: 2.0.0
 info:
   title: Digital Twins Event Gateway
+  version: '1.0.0'
+  description: The Gateway between Azure Digital Twins and the application microservices.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
