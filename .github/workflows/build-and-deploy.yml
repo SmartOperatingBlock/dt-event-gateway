@@ -147,22 +147,18 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Validating AsyncAPI document
-        uses: WaleedAshraf/asyncapi-github-action@v0.0.9
-        with:
-          filepath: docs/api/my-asyncapi.yml
       - name: Generating HTML from AsyncAPI document
         uses: docker://asyncapi/github-action-for-generator:2.0.0
         with:
           template: '@asyncapi/html-template@0.9.0'
-          filepath: docs/async-api/async-api.yml
-          output: ./build/asyncapi/html
+          filepath: ./docs/async-api/async-api.yml
+          output: asyncapy-doc
       - name: Deploy AyncAPI documentation on GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           keep_files: true
-          publish_dir: ./build/asyncapi/html
+          publish_dir: asyncapi-doc
           destination_dir: asyncapi
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
