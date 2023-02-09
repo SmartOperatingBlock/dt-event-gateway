@@ -1,3 +1,34 @@
+## 1.0.0 (2023-02-09)
+
+
+### Documentation
+
+* add sample asyncapi documentation file ([d1b8503](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d1b8503e614cceda70ca5fcf96088bcaf0143af9))
+
+
+### Dependency updates
+
+* **deps:** add kafka dependencies to gradle build file ([3548452](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/3548452a0862347d124bbdcbf8ba34a081022bb1))
+* **deps:** add kafka dependencies to gradle catalog ([598da2a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/598da2a5e0491230ee81047c0fdbe4852e40f306))
+* **deps:** add signalr deps to gradle build file ([84a7763](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/84a7763273c0f218d0e0c07dec1a091e906c161a))
+* **deps:** add signalr deps to gradle catalog ([025410c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/025410c1ec2cafc89cd5d6627c7574b65bb5c82f))
+
+
+### General maintenance
+
+* change project name ([db9008d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/db9008d2100181d3e83ded9f6d828c918bf1f640))
+* update README ([b55f4d3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/b55f4d3b9c49e133b0e214c1feec20477c3ae6db))
+* update README with schema and documentation link ([127f392](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/127f3928238c7649ef7b9a0a2d49fbb9152e1ca0))
+
+
+### Build and continuous integration
+
+* add job to generate and deploy asyncapi documentation ([4eeba69](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/4eeba69c90b30b2e670fd5d607541a24203b2419))
+* add runner to async api deploy job ([dd5b42c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/dd5b42cbebb567ad59a3aa73fa9a524c87be9720))
+* correct async api documentation file path ([071476c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/071476c7e273d19b0545eda83f8766fffaf0e8aa))
+* modify documentation job to publish in kdoc subdirectory ([250c069](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/250c069e5070f8cc569bac0682761dd74277b0eb))
+* remove async api validation job ([f479baf](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/f479baff9af94637a5a8d53ba260f7c682efb54e))
+
 ## [0.1.1](https://github.com/SmartOperatingBlock/kotlin-template-project/compare/0.1.0...0.1.1) (2023-02-06)
 
 
