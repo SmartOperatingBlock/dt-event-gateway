@@ -148,7 +148,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Generating HTML from AsyncAPI document
-        uses: docker://asyncapi/github-action-for-generator:2.0.0
+        uses: docker://asyncapi/github-action-for-generator:2.1.11
         with:
           template: '@asyncapi/html-template@0.9.0'
           filepath: docs/async-api/async-api.yml
