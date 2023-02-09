@@ -11,16 +11,26 @@ plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.kotlin.qa)
     alias(libs.plugins.dokka)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 group = "io.github.smartoperatingblock"
 
 repositories {
     mavenCentral()
+    maven {
+        url = uri("https://packages.confluent.io/maven")
+    }
 }
 
 dependencies {
     implementation(libs.kotlin.stdlib)
+    implementation(libs.kafka.clients)
+    implementation(libs.kafka.streams)
+    implementation(libs.kafka.connect)
+    implementation(libs.kafka.json)
+    implementation(libs.kafka.streams.json.serde)
+    implementation(libs.logback)
     testImplementation(libs.bundles.kotlin.testing)
 }
 
