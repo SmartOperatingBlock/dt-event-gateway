@@ -150,7 +150,7 @@ jobs:
       - name: Validating AsyncAPI document
         uses: WaleedAshraf/asyncapi-github-action@v0.0.9
         with:
-          filepath: docs/api/my-asyncapi.yml
+          filepath: docs/async-api/async-api.yml
       - name: Generating HTML from AsyncAPI document
         uses: docker://asyncapi/github-action-for-generator:2.0.0
         with:
