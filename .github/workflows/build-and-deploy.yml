@@ -152,7 +152,7 @@ jobs:
         with:
           filepath: docs/api/my-asyncapi.yml
       - name: Generating HTML from AsyncAPI document
-        uses: docker://asyncapi/github-action-for-generator:2.0.0
+        uses: docker://asyncapi/github-action-for-generator:2.0.3
         with:
           template: '@asyncapi/html-template@0.9.0'
           filepath: docs/async-api/async-api.yml
