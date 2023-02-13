@@ -31,4 +31,10 @@ object EnvironmentData {
      */
     data class Luminosity(val luminosityValue: Double)
 
+    /**
+     * The presence of a person inside the room.
+     * @param presenceDetected true if is a person detection event, false otherwise.
+     */
+    data class Presence(val presenceDetected: Boolean)
+
 }
