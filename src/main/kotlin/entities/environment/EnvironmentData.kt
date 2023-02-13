@@ -25,4 +25,10 @@ object EnvironmentData {
      */
     data class Temperature(val temperatureValue: Double)
 
+    /**
+     * The luminosity of the room.
+     * @param luminosityValue the luminosity value of the room.
+     */
+    data class Luminosity(val luminosityValue: Double)
+
 }
