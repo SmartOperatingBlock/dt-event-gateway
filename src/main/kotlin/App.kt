@@ -1,3 +1,11 @@
+import entities.events.Event
+import application.presenter.EventConsumer
+import application.presenter.EventPublisher
+import application.services.EventService
+import infrastructure.kafka.KafkaPublisher
+import infrastructure.signalr.SignalRClient
+
+
 /*
  * Copyright (c) 2023. Smart Operating Block
  *
@@ -7,8 +15,13 @@
  */
 
 /**
- * Template for kotlin projects.
+ * The application launcher.
  */
 fun main() {
-    println("Hello World from Kotlin Template")
+
+    val publisher: EventPublisher<Event<Any>> = KafkaPublisher()
+    val consumer: EventConsumer<String> = SignalRClient()
+
+    val service: EventService<String> = EventService(publisher, consumer)
+    service.start()
 }
