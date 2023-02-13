@@ -24,6 +24,7 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.jackson.module.kotlin)
     implementation(libs.kotlin.stdlib)
     implementation(libs.kafka.clients)
     implementation(libs.kafka.streams)
@@ -31,6 +32,7 @@ dependencies {
     implementation(libs.kafka.json)
     implementation(libs.kafka.streams.json.serde)
     implementation(libs.logback)
+    implementation(libs.reactivex)
     implementation(libs.signalr)
     testImplementation(libs.bundles.kotlin.testing)
 }
@@ -54,4 +56,8 @@ tasks.withType<Test> {
         events(*org.gradle.api.tasks.testing.logging.TestLogEvent.values())
         exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
     }
+}
+
+application {
+    mainClass.set("AppKt")
 }
