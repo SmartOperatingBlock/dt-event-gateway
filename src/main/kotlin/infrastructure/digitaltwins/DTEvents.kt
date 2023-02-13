@@ -44,12 +44,12 @@ object DTEvents {
          * The patch section.
          */
         val patch: List<Patch>,
-   )
+    )
 
     /**
      * The event of update of a DT.
      */
-   data class UpdateTwinEvent(
+    data class UpdateTwinEvent(
         /**
          * The data section of the event.
          */
@@ -74,5 +74,5 @@ object DTEvents {
          * The date and time of the event.
          */
         val eventDateTime: String,
-   )
+    )
 }

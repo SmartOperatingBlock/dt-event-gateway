@@ -21,5 +21,4 @@ interface EventPublisher<in E : Event<Any>> {
      * @param event the event to publish.
      */
     fun publishEvent(event: E)
-
 }

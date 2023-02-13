@@ -22,4 +22,4 @@ data class ProcessEvent<E : Any>(
 
     override val data: E,
 
-): Event<E>
+) : Event<E>

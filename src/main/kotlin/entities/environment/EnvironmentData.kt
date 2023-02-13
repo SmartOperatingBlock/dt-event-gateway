@@ -36,5 +36,4 @@ object EnvironmentData {
      * @param presenceDetected true if is a person detection event, false otherwise.
      */
     data class Presence(val presenceDetected: Boolean)
-
 }

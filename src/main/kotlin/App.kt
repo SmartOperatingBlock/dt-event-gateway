@@ -1,10 +1,9 @@
-import entities.events.Event
 import application.presenter.EventConsumer
 import application.presenter.EventPublisher
 import application.services.EventService
+import entities.events.Event
 import infrastructure.kafka.KafkaPublisher
 import infrastructure.signalr.SignalRClient
-
 
 /*
  * Copyright (c) 2023. Smart Operating Block

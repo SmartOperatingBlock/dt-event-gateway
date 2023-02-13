@@ -24,5 +24,4 @@ object ProcessData {
      * @param state the current state of the process.
      */
     data class ProcessState(val state: String)
-
 }
