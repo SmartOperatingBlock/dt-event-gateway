@@ -19,4 +19,10 @@ object EnvironmentData {
      */
     data class Humidity(val humidityPercentage: Int)
 
+    /**
+     * The temperature of the room.
+     * @param temperatureValue the temperature of the room.
+     */
+    data class Temperature(val temperatureValue: Double)
+
 }
