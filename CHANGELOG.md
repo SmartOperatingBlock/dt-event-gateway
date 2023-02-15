@@ -1,3 +1,118 @@
+## 1.0.0 (2023-02-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **release:** [skip ci] 1.0.0 released
+
+### Features
+
+* **app-service:** create event service with event flowable ([839d18e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/839d18eccbe4024e99f9ff5ad86da506637433bf))
+* **azure-dt:** add some model of azure digital twins events ([ca50c2f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ca50c2f90c890dc2f772972b09b4cb9af981d028))
+* create digital twin event parser ([6cf0c16](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6cf0c16e8e655787daac81a464df419a0878fb99))
+* create event consumer interface ([c722847](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/c72284777d875fdce1c9d0a46f2c3ed3a520ad16))
+* create event interface ([2294769](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/2294769324344a04505220aa39b66ee5643091bf))
+* create event parser interface ([0ae4043](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0ae404347466c3cc124f992c7d317b80d12da1de))
+* create event publisher interface ([d68adc0](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d68adc07aafca34bcd9c6a8c7bba80e1722ce23e))
+* create humidity value object ([aa0ff7c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/aa0ff7cd3ede9fdd4506d1c928937d30e8cff2ba))
+* create kafka producer ([bcec1a2](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/bcec1a23d45a99235d37d6378f1a388a05384bf2))
+* create luminosity value object ([88c4992](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/88c499278e1ff566227ef8cb66e6bf32013b3f44))
+* create medical device value object ([c96b003](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/c96b003e228afe003de4ccc3ab428ba20ce4a236))
+* create parser for digital twin relationships events ([9622822](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/962282203a740b783f645ade0a64070556cdd82d))
+* create parser for digital twin update events ([307af9f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/307af9f9192730ab62397322d0b6cc30927ca6cc))
+* create person tracked value object ([d120739](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d1207395189d6b970e86938bc1cbb73d1c926aaf))
+* create presence value object ([24b680a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/24b680a55c7d48cad7dee5d08d21b77a128a4777))
+* create process state value object ([7f4bfcd](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/7f4bfcda7d864af9b74dcaefa31000243c501831))
+* create signalR client ([7a49c0e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/7a49c0ea5c7b36f3f73dd7b73570638f3f6bf09a))
+* create temperature value object ([3de1ae3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/3de1ae323889ad1e6e74c26e52514280ebaf5a22))
+* **events:** create process event ([bae7326](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/bae73260ec25a285f931a03810a8803d531d5aae))
+* **events:** create room event ([8a033c2](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8a033c26cbe61b3c6d9066695ce5c0280b6b88bb))
+* **events:** create tracking event ([61dfb21](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/61dfb21ce574e18f4a7368988dc8706bbfb4d92e))
+
+
+### Bug Fixes
+
+* **deps:** correct signalr deps ([bc9b8f3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/bc9b8f34c10b169299a5ac2b4caef66c31c8144a))
+
+
+### Documentation
+
+* add sample asyncapi documentation file ([d1b8503](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d1b8503e614cceda70ca5fcf96088bcaf0143af9))
+
+
+### Build and continuous integration
+
+* add asyncapi validation job ([1c0373e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/1c0373e45049ef3b7cf722827a2a6497907e7b76))
+* add job to generate and deploy asyncapi documentation ([4eeba69](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/4eeba69c90b30b2e670fd5d607541a24203b2419))
+* add runner to async api deploy job ([dd5b42c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/dd5b42cbebb567ad59a3aa73fa9a524c87be9720))
+* modify documentation job to publish in kdoc subdirectory ([250c069](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/250c069e5070f8cc569bac0682761dd74277b0eb))
+* remove async api validation job and correct path ([6dcac6d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6dcac6d158fa4292dc7e145537bc7c30bf9f37b8))
+
+
+### Style improvements
+
+* adjust kafka publisher style ([5742879](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/57428798de141e75705c0a3b6e0b67b79283661e))
+
+
+### Refactoring
+
+* move update and relationship events to dedicated parser ([a0f02ca](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a0f02ca8f2354b1275d317a88080ae9081f76cb5))
+* refactor code for respect style conventions ([7343d5a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/7343d5aff66d8f8a17112c0fbe20bf5842ec3549))
+
+
+### Dependency updates
+
+* **deps:** add archunit dependency ([3455e03](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/3455e03310b4c2c81416296bb1f56caf709b4c0a))
+* **deps:** add kafka dependencies to gradle build file ([3548452](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/3548452a0862347d124bbdcbf8ba34a081022bb1))
+* **deps:** add kafka dependencies to gradle catalog ([598da2a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/598da2a5e0491230ee81047c0fdbe4852e40f306))
+* **deps:** add reactivex and jackson lib to gradle build file ([6df48c5](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6df48c5638b97b6e21b06a833e8d9cc15bdb3c9f))
+* **deps:** add signalr deps to gradle build file ([84a7763](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/84a7763273c0f218d0e0c07dec1a091e906c161a))
+* **deps:** add signalr deps to gradle catalog ([025410c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/025410c1ec2cafc89cd5d6627c7574b65bb5c82f))
+* **deps:** update dependency com.microsoft.signalr:signalr to v7.0.2 ([c9f5e54](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/c9f5e5464c0205148a7412a296f743146dc5c76d))
+* **deps:** update dependency com.microsoft.signalr:signalr to v7.0.3 ([e6f2710](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e6f2710eee4814890b0c7b50651b23ffd5a6eb2b))
+* **deps:** update dependency gradle to v8 ([25583fa](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/25583fa2f70a4c5945f5ba481d056c281cf5f35b))
+* **deps:** update kafka to v3.4.0 ([49deed0](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/49deed053085494781ba191e19787012d5a1a43b))
+
+
+### Tests
+
+* **architecture:** add archunit tests to enforce the following of clean architecture principles ([e3f790a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e3f790a99b7cd00f7aaf6b3689ef06031dcaf5e1))
+* **parser:** add parser tests ([6e18782](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6e18782f7629b6eb85ea8bc76b7507838e7e048f))
+
+
+### General maintenance
+
+* add datetime property to event ([bd16b78](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/bd16b784ae6e693805fb5c5a89925b6583633651))
+* add measure unit to temperature and luminosity ([1a938af](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/1a938afeb25d60b35515118462466bb92b42542c))
+* add process id to process event ([c0b9332](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/c0b9332b541cd84eac9782b87b70e2a2778e5a6f))
+* add process info data for process events ([8c10108](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8c101083e62b8dcbbbee61c533b46de1db8fadc5))
+* add reactivex lib to gradle catalog ([a81e30b](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a81e30b16585f8ed74846c64caf8f0aac5ef82ba))
+* add sample asyncAPI document ([5c31226](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5c312261621cefbd667543367e7afd09c7a96869))
+* adjust import for new package parser ([67a0e3c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/67a0e3cd41c21c73f5b8fd07e315c3d9737f78b1))
+* adjust import for new package parser ([4af8f34](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/4af8f3489bf7476f293b19f71259c11cb829e9d7))
+* arrange import in alphabetical order ([8db40e6](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8db40e693de5fe792b147f5cf4ae5452e4e6cf31))
+* change kafka producer due to new event publisher type ([ee3c5b9](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ee3c5b9b557e968b4430fc1f23acee138a4a3fd0))
+* change launcher with new event publisher type ([e2801c3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e2801c3c7d8739c2fa06de763c6fdfda8a86c6d9))
+* change project name ([db9008d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/db9008d2100181d3e83ded9f6d828c918bf1f640))
+* change type of event publisher ([9676605](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/9676605988beedf2599100b9e98edb648f4311fd))
+* create application launcher ([ccee1d8](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ccee1d83b57a66995db1e92d537a0e6fcb270050))
+* create empty event ([dd52695](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/dd526958debda388bffa44b71f15e815840d293c))
+* create enum class for twin properties ([45d4592](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/45d4592962a57e2f15ba2e2ec8848e633d47df36))
+* create model for lifecyle digital twins events ([666405e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/666405e686a2c79d365d5ba8d98b95a467455122))
+* create model for relationship digital twins events ([4e3028f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/4e3028f01f81caf1e5f8833110fd4d5932203716))
+* create model for relationship digital twins events ([ca1929b](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ca1929b337f5b082775f47cd17509f77ffc6ae6e))
+* create patient data ([89cccf0](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/89cccf0ffa1f0077b7863c59f522033899f4bffa))
+* delete template test class ([2a1b120](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/2a1b120dc86f1c584ba52ecd9b6b5e858c2722b5))
+* delete useless tracking data ([88f6cd9](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/88f6cd9f11b3ac4bb5ed3ef118b5b1e8fa808960))
+* **docker:** add run gradle task to dockerfile ([25a6afe](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/25a6afe09990c092762df7ed99226acfa478ec07))
+* **docs:** change asyncapi version ([589da31](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/589da316f5b73ab6b40cb76e620951fb522a8f71))
+* modify type in event interface ([b04a1ee](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/b04a1ee2e5b648303ee91c1ab8d1f8da4de9fee4))
+* **release:** [skip ci] 1.0.0 released ([f48fd5c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/f48fd5cabbe5f6e66a2f177b88e88681082c2933))
+* send events only if necessary ([9dd1f4a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/9dd1f4a96293c2ac2be52a16adef161d68250cb2))
+* **test:** add some resource for event tests" ([5bd6f0e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5bd6f0e83bc8565fb39c823396f8c3988388c80c))
+* update README ([b55f4d3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/b55f4d3b9c49e133b0e214c1feec20477c3ae6db))
+* update README with schema and documentation link ([127f392](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/127f3928238c7649ef7b9a0a2d49fbb9152e1ca0))
+
 ## 1.0.0 (2023-02-14)
 
 
