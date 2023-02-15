@@ -19,7 +19,7 @@ import io.reactivex.rxjava3.disposables.Disposable
  * The Application service responsible to start the consumer and to propagate the events to the publisher.
  */
 class EventService<in C>(
-    private val eventPublisher: EventPublisher<Event<Any>>,
+    private val eventPublisher: EventPublisher<Event<*>>,
     private val eventConsumer: EventConsumer<C>
 ) {
 

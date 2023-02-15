@@ -8,12 +8,10 @@
 
 package application.presenter
 
-import entities.events.Event
-
 /**
  * The publisher of events to the microservices.
  */
-interface EventPublisher<in E : Event<Any>> {
+interface EventPublisher<E> {
 
     /**
      * Publish the event.
