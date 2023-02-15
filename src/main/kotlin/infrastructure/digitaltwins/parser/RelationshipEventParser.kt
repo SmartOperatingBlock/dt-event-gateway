@@ -14,8 +14,8 @@ import entities.events.ProcessEvent
 import entities.events.TrackingEvent
 import entities.process.ProcessData
 import infrastructure.digitaltwins.events.RelationshipEvents
-import infrastructure.digitaltwins.events.TwinProperties.DTModelID.PROCESS_MODEL_ID
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.HEALTH_PROFESSIONAL_MODEL_ID
+import infrastructure.digitaltwins.events.TwinProperties.DTModelID.PROCESS_MODEL_ID
 
 /**
  * The parser of Azure Digital Twins Relationship Events.
