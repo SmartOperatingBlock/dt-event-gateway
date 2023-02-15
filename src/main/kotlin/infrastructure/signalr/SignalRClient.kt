@@ -13,7 +13,7 @@ import application.presenter.EventParser
 import com.microsoft.signalr.HubConnectionBuilder
 import entities.events.EmptyEvent
 import entities.events.Event
-import infrastructure.digitaltwins.DTEventParser
+import infrastructure.digitaltwins.parser.DTEventParser
 import io.reactivex.rxjava3.core.FlowableEmitter
 
 /**
