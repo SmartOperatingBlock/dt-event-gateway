@@ -1,0 +1,17 @@
+{
+  "data":{
+    "modelId":"dtmi:io:github:smartoperatingblock:OperatingRoom;1",
+    "patch":[
+      {
+        "value":6,
+        "path":"/humidity",
+        "op":"replace"
+      }
+    ]
+  },
+  "contenttype":"application/json",
+  "traceparent":"00-ec33d2b7df39351b8526aa8a26816c2a-fd2b158b466da2d2-01",
+  "id":"ProvaOperatingRoom",
+  "eventType":"Microsoft.DigitalTwins.Twin.Update",
+  "eventDateTime":"2/15/2023 4:30:58 PM +00:00"
+}

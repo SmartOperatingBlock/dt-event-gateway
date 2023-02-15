@@ -1,0 +1,15 @@
+{
+  "data":{
+    "$relationshipId":"96d407cc-afdd-48e1-8972-3b7413333058",
+    "$etag":"W/\"20b6b6a5-0349-4027-9f4a-dba5af30e39c\"",
+    "$sourceId":"health1",
+    "$relationshipName":"rel_is_inside",
+    "$targetId":"ProvaOperatingRoom",
+    "$sourceModel":"dtmi:io:github:smartoperatingblock:HealthProfessional;1"
+  },
+  "contenttype":"application/json",
+  "traceparent":"00-acc18931bfbcdac4cd520dc3b08fc871-53281297c87d648b-01",
+  "id":"health1/relationships/96d407cc-afdd-48e1-8972-3b7413333058",
+  "eventType":"Microsoft.DigitalTwins.Relationship.Create",
+  "eventDateTime":"2/15/2023 4:40:25 PM +00:00"
+}
