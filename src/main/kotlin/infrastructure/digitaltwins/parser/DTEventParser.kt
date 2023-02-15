@@ -14,10 +14,9 @@ import com.fasterxml.jackson.module.kotlin.readValue
 import entities.events.EmptyEvent
 import entities.events.Event
 import infrastructure.digitaltwins.events.RelationshipEvents.RelationshipEvent
-import infrastructure.digitaltwins.events.TwinProperties.DTEventTypes.UPDATE
-import infrastructure.digitaltwins.events.TwinProperties.DTEventTypes.RELATIONSHIP_DELETE
 import infrastructure.digitaltwins.events.TwinProperties.DTEventTypes.RELATIONSHIP_CREATE
-
+import infrastructure.digitaltwins.events.TwinProperties.DTEventTypes.RELATIONSHIP_DELETE
+import infrastructure.digitaltwins.events.TwinProperties.DTEventTypes.UPDATE
 import infrastructure.digitaltwins.events.UpdateEvents.UpdateTwinEvent
 
 /**

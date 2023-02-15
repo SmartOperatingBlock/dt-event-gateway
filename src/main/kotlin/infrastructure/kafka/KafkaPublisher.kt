@@ -17,7 +17,7 @@ import org.apache.kafka.clients.producer.ProducerRecord
 /**
  * The publisher of events to a Kafka Event Broker.
  */
-class KafkaPublisher : EventPublisher<Event<Any>> {
+class KafkaPublisher : EventPublisher<Event<*>> {
 
     init {
         listOf(System.getenv("BOOTSTRAP_SERVER_URL"), System.getenv("SCHEMA_REGISTRY_URL")).forEach {
@@ -25,7 +25,7 @@ class KafkaPublisher : EventPublisher<Event<Any>> {
                 println(
                     """
                     Invalid environment variable!
-                    Check the documentation here: 
+                    Check the documentation here:
                     https://github.com/SmartOperatingBlock/bootstrap")"""
                         .trimIndent()
                 )
@@ -46,9 +46,9 @@ class KafkaPublisher : EventPublisher<Event<Any>> {
         "TRACKING_EVENT" to "tracking-events"
     )
 
-    private val producer: KafkaProducer<String, Event<Any>> = KafkaProducer(producerProps)
+    private val producer: KafkaProducer<String, Event<*>> = KafkaProducer(producerProps)
 
-    override fun publishEvent(event: Event<Any>) {
+    override fun publishEvent(event: Event<*>) {
         val record = ProducerRecord(eventToTopic[event.key], event.key, event)
         producer.send(record)
     }
