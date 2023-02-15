@@ -27,4 +27,6 @@ data class TrackingEvent<E : Any> (
 
     override val data: E,
 
+    override val dateTime: String
+
 ) : Event<E>

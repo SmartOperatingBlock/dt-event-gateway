@@ -17,4 +17,6 @@ data class ProcessEvent<E : Any>(
 
     override val data: E,
 
+    override val dateTime: String
+
 ) : Event<E>

@@ -22,4 +22,9 @@ interface Event<out E> {
      * The data of the event.
      */
     val data: E
+
+    /**
+     * The date and time of the event.
+     */
+    val dateTime: String
 }

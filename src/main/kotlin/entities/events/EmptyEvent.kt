@@ -11,4 +11,8 @@ package entities.events
 /**
  * The event sent when the input has not to be propagated to the microservices.
  */
-data class EmptyEvent(override val key: String = "EMPTY_EVENT", override val data: Any = "EMPTY_DATA" ) : Event<Any>
+data class EmptyEvent(
+    override val key: String = "EMPTY_EVENT",
+    override val data: Any = "EMPTY_DATA",
+    override val dateTime: String = "EMPTY_DATA"
+) : Event<Any>

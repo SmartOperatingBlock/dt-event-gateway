@@ -60,25 +60,30 @@ class DTEventParser : EventParser<String> {
         when (updateTwinEvent.data.patch[0].path) {
             "/temperature" -> RoomEvent(
                 roomId = updateTwinEvent.id,
-                data = Temperature(updateTwinEvent.data.patch[0].value as Double)
+                data = Temperature(updateTwinEvent.data.patch[0].value as Double),
+                dateTime = updateTwinEvent.eventDateTime
             )
             "/humidity" -> RoomEvent(
                 roomId = updateTwinEvent.id,
-                data = Humidity(updateTwinEvent.data.patch[0].value as Int)
+                data = Humidity(updateTwinEvent.data.patch[0].value as Int),
+                dateTime = updateTwinEvent.eventDateTime
             )
             "/luminosity" -> RoomEvent(
                 roomId = updateTwinEvent.id,
-                data = Luminosity(updateTwinEvent.data.patch[0].value as Double)
+                data = Luminosity(updateTwinEvent.data.patch[0].value as Double),
+                dateTime = updateTwinEvent.eventDateTime
             )
             "/presence_inside" -> {
                 RoomEvent(
                     roomId = updateTwinEvent.id,
-                    data = Presence(updateTwinEvent.data.patch[0].value as Boolean)
+                    data = Presence(updateTwinEvent.data.patch[0].value as Boolean),
+                    dateTime = updateTwinEvent.eventDateTime
                 )
             }
             "/is_on_operating_table" -> {
                 ProcessEvent(
-                    data = ProcessInfo("Patient on Operating Bed", updateTwinEvent.id)
+                    data = ProcessInfo("Patient on Operating Bed", updateTwinEvent.id),
+                    dateTime = updateTwinEvent.eventDateTime
                 )
             }
             else -> EmptyEvent()
@@ -89,10 +94,12 @@ class DTEventParser : EventParser<String> {
             "rel_is_inside" -> TrackingEvent(
                 healthProfessionalId = createdRelationship.data.sourceId,
                 roomId = createdRelationship.data.targetId,
-                data = true
+                data = true,
+                dateTime = createdRelationship.eventDateTime
             )
             "rel_use" -> ProcessEvent(
-                data = MedicalDeviceUsage(createdRelationship.data.targetId, createdRelationship.data.sourceId)
+                data = MedicalDeviceUsage(createdRelationship.data.targetId, createdRelationship.data.sourceId),
+                dateTime = createdRelationship.eventDateTime
             )
             else -> EmptyEvent()
         }
@@ -102,7 +109,8 @@ class DTEventParser : EventParser<String> {
             "rel_is_inside" -> TrackingEvent(
                 healthProfessionalId = deletedRelationship.data.sourceId,
                 roomId = deletedRelationship.data.targetId,
-                data = false
+                data = false,
+                dateTime = deletedRelationship.eventDateTime
             )
             else -> EmptyEvent()
         }
