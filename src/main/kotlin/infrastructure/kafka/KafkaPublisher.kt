@@ -22,10 +22,13 @@ class KafkaPublisher : EventPublisher<Event<Any>> {
     init {
         listOf(System.getenv("BOOTSTRAP_SERVER_URL"), System.getenv("SCHEMA_REGISTRY_URL")).forEach {
             requireNotNull(it) {
-                println("""
-                Invalid environment variable!
-                Check the documentation here: https://github.com/SmartOperatingBlock/bootstrap")
-                """.trimIndent())
+                println(
+                    """
+                    Invalid environment variable!
+                    Check the documentation here: 
+                    https://github.com/SmartOperatingBlock/bootstrap")"""
+                        .trimIndent()
+                )
             }
         }
     }
@@ -35,7 +38,7 @@ class KafkaPublisher : EventPublisher<Event<Any>> {
         "schema.registry.url" to System.getenv("SCHEMA_REGISTRY_URL"),
         "key.serializer" to "org.apache.kafka.common.serialization.StringSerializer",
         "value.serializer" to KafkaJsonSerializer::class.java
-        )
+    )
 
     private val eventToTopic: Map<String, String> = mapOf(
         "ROOM_EVENT" to "room-events",
