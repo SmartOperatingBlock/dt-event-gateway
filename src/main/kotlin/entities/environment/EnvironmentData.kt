@@ -22,18 +22,30 @@ object EnvironmentData {
     /**
      * The temperature of the room.
      * @param temperatureValue the temperature of the room.
+     * @param temperatureUnit the temperature unit.
      */
-    data class Temperature(val temperatureValue: Double)
+    data class Temperature(val temperatureValue: Double, val temperatureUnit: TemperatureUnit)
 
     /**
      * The luminosity of the room.
      * @param luminosityValue the luminosity value of the room.
+     * @param luminosityUnit the luminosity unit.
      */
-    data class Luminosity(val luminosityValue: Double)
+    data class Luminosity(val luminosityValue: Double, val luminosityUnit: LuminosityUnit)
 
     /**
      * The presence of a person inside the room.
      * @param presenceDetected true if is a person detection event, false otherwise.
      */
     data class Presence(val presenceDetected: Boolean)
+
+    /** The temperature unit. **/
+    enum class TemperatureUnit {
+        CELSIUS
+    }
+
+    /** The luminosity unit. **/
+    enum class LuminosityUnit {
+        LUX
+    }
 }
