@@ -11,6 +11,7 @@ package infrastructure.signalr
 import application.presenter.EventConsumer
 import application.presenter.EventParser
 import com.microsoft.signalr.HubConnectionBuilder
+import entities.events.EmptyEvent
 import entities.events.Event
 import infrastructure.digitaltwins.DTEventParser
 import io.reactivex.rxjava3.core.FlowableEmitter
@@ -30,12 +31,14 @@ class SignalRClient : EventConsumer<String> {
     private val eventParser: EventParser<String> = DTEventParser()
 
     override fun start(emitter: FlowableEmitter<Event<Any>>) {
-        connection.on("newMessage", { event ->
-                emitter.onNext(consumeEvent(event))
-            }, String::class.java)
+        connection.on("newMessage", {
+            val event = consumeEvent(it)
+            if (event !is EmptyEvent) {
+                emitter.onNext(event)
+            }
+        }, String::class.java)
         connection.start()
     }
 
     override fun consumeEvent(inputEvent: String): Event<Any> = eventParser.parseEvent(inputEvent)
-
 }
