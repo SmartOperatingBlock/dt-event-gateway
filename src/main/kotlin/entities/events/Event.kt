@@ -11,7 +11,7 @@ package entities.events
 /**
  * The interface of a generic event.
  */
-interface Event<E : Any> {
+interface Event<out E> {
 
     /**
      * The key of the event. Every type of event has its unique key.
