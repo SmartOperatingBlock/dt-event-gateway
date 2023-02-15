@@ -15,11 +15,6 @@ data class ProcessEvent<E : Any>(
 
     override val key: String = "PROCESS_EVENT",
 
-    /**
-     * The id of the process.
-     */
-    val processId: String,
-
     override val data: E,
 
 ) : Event<E>
