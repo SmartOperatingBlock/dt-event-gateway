@@ -8,7 +8,7 @@
 
 package instracture.parser
 
-import infrastructure.digitaltwins.DTEventParser
+import infrastructure.digitaltwins.parser.DTEventParser
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
