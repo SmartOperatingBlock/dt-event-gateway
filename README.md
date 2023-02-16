@@ -8,8 +8,8 @@ The Event Gateway between Digital Twins and Microservices.
 It's responsible to consume events from **Azure Digital Twins** through **Azure SignalR** service and to propagate them to application microservices through the **Kafka Event Broker**.
 
 ## Documentation
-- Checkout the latest events AsyncAPI documentation [here](https://smartoperatingblock.github.io/dt-event-gateway/asyncapi)
-- Checkout the latest project documentation [here](https://smartoperatingblock.github.io/dt-event-gateway/kdoc)
+- Checkout the latest events AsyncAPI documentation [here](https://smartoperatingblock.github.io/dt-event-gateway/documentation/asyncapi-doc)
+- Checkout the latest project documentation [here](https://smartoperatingblock.github.io/dt-event-gateway/documentation/code-doc)
 
 ---
 
