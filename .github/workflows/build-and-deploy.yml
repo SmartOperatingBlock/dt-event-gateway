@@ -115,7 +115,6 @@ jobs:
     needs:
       - release
     runs-on: ubuntu-latest
-    # Update documentation only when there is a new release
     if: needs.release.outputs.release-status == 'released'
     steps:
       - name: Checkout the repository
@@ -123,46 +122,17 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Generate Documentation
-        run: ./gradlew dokkaHtml
-      - name: Deploy documentation on GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Generate and deploy documenation
+        uses: SmartOperatingBlock/documentation-ghp-action@1.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          keep_files: true
-          publish_dir: ./build/dokka/html
-          destination_dir: kdoc
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'docs: update project documentation'
-
-  async-api-deploy:
-    needs:
-      - release
-    runs-on: ubuntu-latest
-    if: needs.release.outputs.release-status == 'released'
-    steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-          fetch-depth: 0
-      - name: Generating HTML from AsyncAPI document
-        uses: docker://asyncapi/github-action-for-generator:2.1.11
-        with:
-          template: '@asyncapi/html-template@0.9.0'
-          filepath: ./docs/async-api/async-api.yml
-          output: asyncapy-doc
-      - name: Deploy AyncAPI documentation on GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          keep_files: true
-          publish_dir: asyncapi-doc
-          destination_dir: asyncapi
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'docs: update asyncapi documentation'
+          should-generate-code-documentation: true
+          code-documentation-generation-command: ./gradlew dokkaHtml
+          code-documentation-dst-folder: './build/dokka/html'
+          code-documentation-site-folder: 'documentation/code-doc'
+          should-generate-asyncapi-documentation: true
+          asyncapi-documentation-input-file: 'docs/asyncapi/asyncapi.yml'
+          asyncapi-documentation-dst-folder: 'documentation/asyncapi-doc'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
   success:
     runs-on: ubuntu-22.04
@@ -171,7 +141,6 @@ jobs:
       - release
       - docker-image-delivery
       - documentation-deploy
-      - async-api-deploy
     if: >-
       always() && (
         contains(join(needs.*.result, ','), 'failure')
