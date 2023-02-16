@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.0.0...1.1.0) (2023-02-16)
+
+
+### Features
+
+* change action to generate and deploy documentation ([14ae279](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/14ae279e08adb6ddee22ab2cfd0e57ead652e8aa))
+
+
+### General maintenance
+
+* renamed asyncapi file ([0be59a5](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0be59a51850e0021922f5a063f92ca9c3cc21133))
+
 ## 1.0.0 (2023-02-15)
 
 
