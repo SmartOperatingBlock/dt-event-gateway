@@ -20,23 +20,25 @@ class CleanArchitectureTest : FunSpec({
             .noClasses().that().resideInAPackage("..entities..")
             .should().dependOnClassesThat().resideInAPackage("..application..")
             .andShould().dependOnClassesThat().resideInAPackage("..infrastructure..")
-            .check(ClassFileImporter().importPackages("..entities.."))
+            .check(ClassFileImporter().importPackages("entities.."))
     }
 
     test("Application layer should not depend on Infrastructure layer") {
         ArchRuleDefinition
             .noClasses().that().resideInAPackage("..application..")
             .should().dependOnClassesThat().resideInAPackage("..infrastructure..")
-            .check(ClassFileImporter().importPackages("..application.."))
+            .check(ClassFileImporter().importPackages("application.."))
     }
 
     test("The layer of architecture should respect clean architecture principles") {
         layeredArchitecture()
             .consideringAllDependencies()
-            .layer("Entity").definedBy("..entities..")
-            .layer("Application").definedBy("..application..")
-            .layer("Infrastructure").definedBy("..infrastructure..")
-            .whereLayer("Application").mayOnlyBeAccessedByLayers("Infrastructure")
-            .whereLayer("Entity").mayNotAccessAnyLayer()
+            .layer("entity").definedBy("entities..")
+            .layer("application").definedBy("application..")
+            .layer("infrastructure").definedBy("infrastructure..")
+            .whereLayer("entity").mayOnlyBeAccessedByLayers("application", "infrastructure")
+            .whereLayer("application").mayOnlyBeAccessedByLayers("infrastructure")
+            .whereLayer("infrastructure").mayNotBeAccessedByAnyLayer()
+            .check(ClassFileImporter().importPackages("entities..", "application..", "infrastructure.."))
     }
 })
