@@ -59,6 +59,11 @@ $dokka.location:entities.events/RoomEvent/data/#/PointingToDeclaration/dt-event
 $dokka.location:entities.events/RoomEvent/dateTime/#/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/date-time.html
 $dokka.location:entities.events/RoomEvent/key/#/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/key.html
 $dokka.location:entities.events/RoomEvent/roomId/#/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/room-id.html
+$dokka.location:entities.events/SurgeryBookingEvent///PointingToDeclaration/dt-event-gateway/entities.events/-surgery-booking-event/index.html
+$dokka.location:entities.events/SurgeryBookingEvent/SurgeryBookingEvent/#kotlin.String#TypeParam(bounds=[kotlin.Any])#kotlin.String/PointingToDeclaration/dt-event-gateway/entities.events/-surgery-booking-event/-surgery-booking-event.html
+$dokka.location:entities.events/SurgeryBookingEvent/data/#/PointingToDeclaration/dt-event-gateway/entities.events/-surgery-booking-event/data.html
+$dokka.location:entities.events/SurgeryBookingEvent/dateTime/#/PointingToDeclaration/dt-event-gateway/entities.events/-surgery-booking-event/date-time.html
+$dokka.location:entities.events/SurgeryBookingEvent/key/#/PointingToDeclaration/dt-event-gateway/entities.events/-surgery-booking-event/key.html
 $dokka.location:entities.events/TrackingEvent///PointingToDeclaration/dt-event-gateway/entities.events/-tracking-event/index.html
 $dokka.location:entities.events/TrackingEvent/TrackingEvent/#kotlin.String#kotlin.String#kotlin.String#TypeParam(bounds=[kotlin.Any])#kotlin.String/PointingToDeclaration/dt-event-gateway/entities.events/-tracking-event/-tracking-event.html
 $dokka.location:entities.events/TrackingEvent/data/#/PointingToDeclaration/dt-event-gateway/entities.events/-tracking-event/data.html
@@ -99,23 +104,22 @@ $dokka.location:entities.process/ProcessData.ProcessInfo/ProcessInfo/#kotlin.Str
 $dokka.location:entities.process/ProcessData.ProcessInfo/info/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-process-info/info.html
 $dokka.location:entities.process/ProcessData.ProcessInfo/processId/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-process-info/process-id.html
 $dokka.location:entities.process/ProcessData///PointingToDeclaration/dt-event-gateway/entities.process/-process-data/index.html
+$dokka.location:entities.surgery////PointingToDeclaration/dt-event-gateway/entities.surgery/index.html
+$dokka.location:entities.surgery/SurgeryBookingData.SurgeryBooking///PointingToDeclaration/dt-event-gateway/entities.surgery/-surgery-booking-data/-surgery-booking/index.html
+$dokka.location:entities.surgery/SurgeryBookingData.SurgeryBooking/SurgeryBooking/#kotlin.String#kotlin.String/PointingToDeclaration/dt-event-gateway/entities.surgery/-surgery-booking-data/-surgery-booking/-surgery-booking.html
+$dokka.location:entities.surgery/SurgeryBookingData.SurgeryBooking/surgeryDate/#/PointingToDeclaration/dt-event-gateway/entities.surgery/-surgery-booking-data/-surgery-booking/surgery-date.html
+$dokka.location:entities.surgery/SurgeryBookingData.SurgeryBooking/surgeryType/#/PointingToDeclaration/dt-event-gateway/entities.surgery/-surgery-booking-data/-surgery-booking/surgery-type.html
+$dokka.location:entities.surgery/SurgeryBookingData///PointingToDeclaration/dt-event-gateway/entities.surgery/-surgery-booking-data/index.html
 $dokka.location:infrastructure.digitaltwins.events////PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/index.html
 $dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/index.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/LifecycleEvent/#infrastructure.digitaltwins.events.LifecycleEvents.LifecycleEventData#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/-lifecycle-event.html
+$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/LifecycleEvent/#kotlin.collections.Map[kotlin.String,kotlin.Any]#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/-lifecycle-event.html
 $dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/contenttype/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/contenttype.html
 $dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/data/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/data.html
 $dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/eventDateTime/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/event-date-time.html
 $dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/eventType/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/event-type.html
 $dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/id/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/id.html
+$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/model/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/model.html
 $dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEvent/traceparent/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event/traceparent.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEventData///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event-data/index.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEventData/LifecycleEventData/#kotlin.String#kotlin.String#infrastructure.digitaltwins.events.LifecycleEvents.LifecycleMetadata/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event-data/-lifecycle-event-data.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEventData/dtId/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event-data/dt-id.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEventData/etag/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event-data/etag.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleEventData/metadata/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-event-data/metadata.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleMetadata///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-metadata/index.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleMetadata/LifecycleMetadata/#kotlin.String/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-metadata/-lifecycle-metadata.html
-$dokka.location:infrastructure.digitaltwins.events/LifecycleEvents.LifecycleMetadata/model/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/-lifecycle-metadata/model.html
 $dokka.location:infrastructure.digitaltwins.events/LifecycleEvents///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-lifecycle-events/index.html
 $dokka.location:infrastructure.digitaltwins.events/RelationshipEvents.RelationshipEvent///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-relationship-events/-relationship-event/index.html
 $dokka.location:infrastructure.digitaltwins.events/RelationshipEvents.RelationshipEvent/RelationshipEvent/#infrastructure.digitaltwins.events.RelationshipEvents.RelationshipEventData#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-relationship-events/-relationship-event/-relationship-event.html
@@ -134,6 +138,8 @@ $dokka.location:infrastructure.digitaltwins.events/RelationshipEvents.Relationsh
 $dokka.location:infrastructure.digitaltwins.events/RelationshipEvents.RelationshipEventData/sourceModel/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-relationship-events/-relationship-event-data/source-model.html
 $dokka.location:infrastructure.digitaltwins.events/RelationshipEvents.RelationshipEventData/targetId/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-relationship-events/-relationship-event-data/target-id.html
 $dokka.location:infrastructure.digitaltwins.events/RelationshipEvents///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-relationship-events/index.html
+$dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTEventTypes.CREATE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-event-types/-c-r-e-a-t-e/index.html
+$dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTEventTypes.DELETE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-event-types/-d-e-l-e-t-e/index.html
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTEventTypes.RELATIONSHIP_CREATE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-event-types/-r-e-l-a-t-i-o-n-s-h-i-p_-c-r-e-a-t-e/index.html
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTEventTypes.RELATIONSHIP_DELETE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-event-types/-r-e-l-a-t-i-o-n-s-h-i-p_-d-e-l-e-t-e/index.html
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTEventTypes.UPDATE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-event-types/-u-p-d-a-t-e/index.html
@@ -146,6 +152,7 @@ $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTModelID.OPER
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTModelID.PATIENT_MODEL_ID///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-model-i-d/-p-a-t-i-e-n-t_-m-o-d-e-l_-i-d/index.html
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTModelID.PRE_OPERATING_ROOM_MODEL_ID///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-model-i-d/-p-r-e_-o-p-e-r-a-t-i-n-g_-r-o-o-m_-m-o-d-e-l_-i-d/index.html
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTModelID.PROCESS_MODEL_ID///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-model-i-d/-p-r-o-c-e-s-s_-m-o-d-e-l_-i-d/index.html
+$dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTModelID.SURGERY_BOOKING_MODEL_ID///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-model-i-d/-s-u-r-g-e-r-y_-b-o-o-k-i-n-g_-m-o-d-e-l_-i-d/index.html
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTModelID///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-model-i-d/index.html
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTModelID/id/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-model-i-d/id.html
 $dokka.location:infrastructure.digitaltwins.events/TwinProperties.DTModelID/valueOf/#kotlin.String/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.events/-twin-properties/-d-t-model-i-d/value-of.html
@@ -192,6 +199,9 @@ $dokka.location:infrastructure.digitaltwins.parser////PointingToDeclaration/dt-
 $dokka.location:infrastructure.digitaltwins.parser/DTEventParser///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-d-t-event-parser/index.html
 $dokka.location:infrastructure.digitaltwins.parser/DTEventParser/DTEventParser/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-d-t-event-parser/-d-t-event-parser.html
 $dokka.location:infrastructure.digitaltwins.parser/DTEventParser/parseEvent/#kotlin.String/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-d-t-event-parser/parse-event.html
+$dokka.location:infrastructure.digitaltwins.parser/LifecycleEventParser///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-lifecycle-event-parser/index.html
+$dokka.location:infrastructure.digitaltwins.parser/LifecycleEventParser/LifecycleEventParser/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-lifecycle-event-parser/-lifecycle-event-parser.html
+$dokka.location:infrastructure.digitaltwins.parser/LifecycleEventParser/manageEvent/#infrastructure.digitaltwins.events.LifecycleEvents.LifecycleEvent/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-lifecycle-event-parser/manage-event.html
 $dokka.location:infrastructure.digitaltwins.parser/RelationshipEventParser///PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-relationship-event-parser/index.html
 $dokka.location:infrastructure.digitaltwins.parser/RelationshipEventParser/RelationshipEventParser/#/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-relationship-event-parser/-relationship-event-parser.html
 $dokka.location:infrastructure.digitaltwins.parser/RelationshipEventParser/manageCreatedRelationship/#infrastructure.digitaltwins.events.RelationshipEvents.RelationshipEvent/PointingToDeclaration/dt-event-gateway/infrastructure.digitaltwins.parser/-relationship-event-parser/manage-created-relationship.html
@@ -213,6 +223,7 @@ application.services
 entities.environment
 entities.events
 entities.process
+entities.surgery
 infrastructure.digitaltwins.events
 infrastructure.digitaltwins.parser
 infrastructure.kafka
