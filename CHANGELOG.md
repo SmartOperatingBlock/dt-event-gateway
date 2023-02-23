@@ -1,3 +1,40 @@
+## [1.2.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.1.0...1.2.0) (2023-02-23)
+
+
+### Features
+
+* create parser for digital twin lifecycle events ([eaeeada](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/eaeeadada9117e3434a4e08c7847643943573d5e))
+* create surgery booking data ([8bf9f0e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8bf9f0e4d75afa8dac79726514464f25831f06d0))
+* create surgery booking event ([7755d3e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/7755d3e408ed4b872154d463cf72d35c70b87660))
+
+
+### Tests
+
+* **architecture:** fix test on clean architecture layers ([1bc6e34](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/1bc6e345b0dd0b9b4498e808f6ded7951c5e979c))
+
+
+### Build and continuous integration
+
+* change workflow for new release custom action ([b000d7c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/b000d7c3bc07349a2f92bb011018654e5c2d5d00))
+* **deps:** update gradle/wrapper-validation-action action to v1.0.6 ([680563c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/680563c725fd073704c1e83f5853cee3473b5ddc))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.0.1 ([a6a035c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a6a035c66f3d10582230c7794b387218462fcda5))
+* **deps:** update plugin kotlin-qa to v0.34.0 ([32afc44](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/32afc4406323e75b32f8db049d2465a854d27f5e))
+* **deps:** update plugin kotlin-qa to v0.34.1 ([b8ede40](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/b8ede40e7ad235572648a02ea1305a73adb73295))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.3 ([03843bb](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/03843bb8b3c76658d1a73207423c2e90106bead7))
+
+
+### General maintenance
+
+* add parser to event parser ([781fe29](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/781fe29b5c3966e78d89ccc0f5972d9ec7f47f52))
+* add surgery booking events topic to publisher ([ece20bd](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ece20bd8bc6f4c0f2036fa06cae6f92173b522e4))
+* add surgery booking model to enum ([627f7c9](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/627f7c94d3900df0f5a05bfdbd6f9c34bb4e4f0c))
+* change type of lifecycle events data ([ba5c2a7](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ba5c2a7b29ef78eee40ef11e38c8bf01f01a71f5))
+* update README with new documentation links ([ad297dd](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ad297dd4a2783571ebd882e72e81c0bd47e51830))
+
 ## [1.1.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.0.0...1.1.0) (2023-02-16)
 
 
