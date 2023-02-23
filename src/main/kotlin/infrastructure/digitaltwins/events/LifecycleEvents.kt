@@ -14,41 +14,13 @@ package infrastructure.digitaltwins.events
 object LifecycleEvents {
 
     /**
-     * The date section for lifecycle events.
-     */
-    data class LifecycleEventData(
-        /**
-         * The DT id.
-         */
-        val dtId: String,
-        /**
-         * The DT etag.
-         */
-        val etag: String,
-        /**
-         * The metadata of the DT.
-         */
-        val metadata: LifecycleMetadata
-    )
-
-    /**
-     * The metadata of the DT.
-     */
-    data class LifecycleMetadata(
-        /**
-         * The model of the DT.
-         */
-        val model: String
-    )
-
-    /**
      * The event of creation or delete of a DT.
      */
     data class LifecycleEvent(
         /**
          * The data section of the event.
          */
-        val data: LifecycleEventData,
+        val data: Map<String, Any>,
         /**
          * The type of the event.
          */
@@ -65,6 +37,12 @@ object LifecycleEvents {
          * The type of the event.
          */
         val eventType: String,
+
+        /**
+         * The model of the digital twin.
+         */
+        val model: String,
+
         /**
          * The date and time of the event.
          */
