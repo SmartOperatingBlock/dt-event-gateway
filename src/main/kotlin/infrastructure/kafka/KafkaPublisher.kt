@@ -43,7 +43,8 @@ class KafkaPublisher : EventPublisher<Event<*>> {
     private val eventToTopic: Map<String, String> = mapOf(
         "ROOM_EVENT" to "room-events",
         "PROCESS_EVENT" to "process-events",
-        "TRACKING_EVENT" to "tracking-events"
+        "TRACKING_EVENT" to "tracking-events",
+        "SURGERY_BOOKING_EVENT" to "surgery-bookings-events"
     )
 
     private val producer: KafkaProducer<String, Event<*>> = KafkaProducer(producerProps)
