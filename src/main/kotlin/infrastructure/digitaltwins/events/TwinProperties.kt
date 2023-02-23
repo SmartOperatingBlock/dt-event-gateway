@@ -47,7 +47,8 @@ object TwinProperties {
         PRE_OPERATING_ROOM_MODEL_ID("dtmi:io:github:smartoperatingblock:PrePostOperatingRoom;1"),
         PROCESS_MODEL_ID("dtmi:io:github:smartoperatingblock:SurgicalProcess;1"),
         PATIENT_MODEL_ID("dtmi:io:github:smartoperatingblock:Patient;1"),
-        HEALTH_PROFESSIONAL_MODEL_ID("dtmi:io:github:smartoperatingblock:HealthProfessional;1")
+        HEALTH_PROFESSIONAL_MODEL_ID("dtmi:io:github:smartoperatingblock:HealthProfessional;1"),
+        SURGERY_BOOKING_MODEL_ID("dtmi:io:github:smartoperatingblock:SurgeryBooking;1")
     }
 
     /**
@@ -55,6 +56,8 @@ object TwinProperties {
      * @param type the event type.
      */
     enum class DTEventTypes(val type: String) {
+        CREATE("Microsoft.DigitalTwins.Twin.Create"),
+        DELETE("Microsoft.DigitalTwins.Twin.Delete"),
         UPDATE("Microsoft.DigitalTwins.Twin.Update"),
         RELATIONSHIP_CREATE("Microsoft.DigitalTwins.Relationship.Create"),
         RELATIONSHIP_DELETE("Microsoft.DigitalTwins.Relationship.Delete"),
