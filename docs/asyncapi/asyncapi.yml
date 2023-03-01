@@ -1,24 +1,279 @@
 asyncapi: 2.6.0
+id: 'https://github.com/smartoperatingblock/dt-event-gateway'
+tags:
+  - name: user
+  - name: signup
+  - name: register
 info:
   title: Digital Twins Event Gateway
   version: 1.0.0
-  description: The Gateway between Azure Digital Twins and the application microservices.
+  description: |
+    The Gateway between Azure Digital Twins and the application microservices.
+    ### Features:
+    * Consume Digital Twins events from a SignalR topic
+    * Send events to a Kafka event broker
+  license:
+    name: MIT
+    url: https://opensource.org/license/mit/
+  contact:
+    name: API Support
+    url: https://smartoperatingblock.github.io
+    email: info@smartoperatingblock.com
+
+servers:
+  production:
+    url: http://broker:29092
+    protocol: kafka
+    description: The event broker
+
+defaultContentType: application/json
 
 channels:
-  user/signedup:
+  room-events:
+    description: The topic on which room events are published and consumed.
     subscribe:
+      summary: |
+        Send room informations such as temperature, luminosity, humidity, etc.
       message:
-        $ref: '#/components/messages/UserSignedUp'
+        oneOf:
+          - "$ref": '#/components/messages/temperatureEvent'
+          - "$ref": "#/components/messages/humidityEvent"
+          - "$ref": "#/components/messages/presenceEvent"
+          - "$ref": "#/components/messages/luminosityEvent"
+
+  process-events:
+    description: The topic on which process events are published and consumed.
+    subscribe:
+      summary: |
+        Send all process events.
+      message:
+        oneOf:
+          - "$ref": '#/components/messages/medicalDeviceUsageEvent'
+          - "$ref": "#/components/messages/processInfoEvent"
+
+  tracking-events:
+    description: The topic on which health professionals tracking events are published and consumed.
+    subscribe:
+      summary: |
+        Send the tracking event of a health professional within an operating block room.
+      message:
+        $ref: '#/components/messages/trackingEvent'
+
 components:
   messages:
-    UserSignedUp:
+    temperatureEvent:
+      name: temperatureEvent
+      title: The Temperature Event
+      summary: the event of change of temperature in a room.
+      contentType: application/json
       payload:
-        type: object
-        properties:
-          displayName:
-            type: string
-            description: Name of the user
-          email:
-            type: string
-            format: email
-            description: Email of the user
+        $ref: "#/components/schemas/temperatureEventPayload"
+    humidityEvent:
+      name: humidityEvent
+      title: The Humidity Event
+      summary: the event of change of humidity in a room.
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/humidityEventPayload"
+    presenceEvent:
+      name: luminosityEvent
+      title: The Luminosity Event
+      summary: the event of change of luminosity in a room.
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/luminosityEventPayload"
+    luminosityEvent:
+      name: presenceEvent
+      title: The Presence Event
+      summary: the event of presence detected in a room.
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/presenceEventPayload"
+
+    medicalDeviceUsageEvent:
+      name: medicalDeviceUsageEvent
+      title: The Medical Device Usage Event
+      summary: the event of usage of a implantable medical device in a process.
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/medicalDeviceUsageEventPayload"
+    processInfoEvent:
+      name: processInfoEvent
+      title: The Process Informations Event
+      summary: the event about some informations on process.
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/processInfoEventPayload"
+
+    trackingEvent:
+      name: trackingEvent
+      title: The Tracking Event
+      summary: the event about health professionals tracking.
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/trackingEventPayload"
+
+  schemas:
+
+    temperatureEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        roomId:
+          type: string
+          description: The id of the room.
+        data:
+          type: object
+          $ref: "#/components/schemas/temperature"
+        dateTime:
+          type: string
+          description: the timestamp of the event.
+
+    humidityEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        roomId:
+          type: string
+          description: The id of the room.
+        data:
+          type: object
+          $ref: "#/components/schemas/humidity"
+        dateTime:
+          type: string
+          description: the timestamp of the event.
+
+    luminosityEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        roomId:
+          type: string
+          description: The id of the room.
+        data:
+          type: object
+          $ref: "#/components/schemas/luminosity"
+        dateTime:
+          type: string
+          description: the timestamp of the event.
+
+    presenceEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        roomId:
+          type: string
+          description: The id of the room.
+        data:
+          type: object
+          $ref: "#/components/schemas/presence"
+        dateTime:
+          type: string
+          description: the timestamp of the event.
+
+    medicalDeviceUsageEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        data:
+          type: object
+          $ref: "#/components/schemas/medicalDeviceUsage"
+        dateTime:
+          type: string
+          description: the timestamp of the event.
+
+    processInfoEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        data:
+          type: object
+          $ref: "#/components/schemas/processInfo"
+        dateTime:
+          type: string
+          description: the timestamp of the event.
+
+    trackingEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        healthProfessionalId:
+          type: string
+          description: The id of the health professional tracked.
+        roomId:
+          type: string
+          description: The id of the room in which the health professional is tracked.
+        data:
+          type: boolean
+          description: true if the health professional is tracked, false otherwise.
+        dateTime:
+          type: string
+          description: the timestamp of the event.
+
+    temperature:
+      type: object
+      properties:
+        temperatureValue:
+          type: number
+          description: The temperature value
+        temperatureUnit:
+          type: string
+          description: the temperature measure unit
+
+    humidity:
+      type: object
+      properties:
+        humidityPercentage:
+          type: number
+          description: The humidity percentage
+
+    luminosity:
+      type: object
+      properties:
+        luminosityValue:
+          type: number
+          description: The luminosity value
+        luminosityUnit:
+          type: string
+          description: the luminosity measure unit
+
+    presence:
+      type: object
+      properties:
+        presenceDetected:
+          type: boolean
+          description: true if a presence is detected, false otherwise
+
+    medicalDeviceUsage:
+      type: object
+      properties:
+        medicalDeviceID:
+          type: string
+          description: The id of the medical device.
+        processId:
+          type: string
+          description: The id of the process.
+
+    processInfo:
+      type: object
+      properties:
+        info:
+          type: string
+          description: The information about the process.
+        processId:
+          type: string
+          description: The id of the process.
