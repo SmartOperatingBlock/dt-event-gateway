@@ -1,3 +1,16 @@
+## [1.2.1](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.2.0...1.2.1) (2023-03-01)
+
+
+### Dependency updates
+
+* **deps:** update confluent to v7.3.2 ([bf65a94](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/bf65a940a1058c739ad7b78d001f618f66fb3ebf))
+* **deps:** update plugin kotlin-qa to v0.34.2 ([0451068](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0451068f1526a9a8302d6f63d4d1de9b4c93746a))
+
+
+### Documentation
+
+* **asyncapi:** add events documentation with async api standard ([54b7ba3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/54b7ba32cd4d20dc652bd63231ff30faa19ec69e))
+
 ## [1.2.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.1.0...1.2.0) (2023-02-23)
 
 
