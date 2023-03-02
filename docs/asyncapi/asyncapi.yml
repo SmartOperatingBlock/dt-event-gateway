@@ -6,7 +6,7 @@ tags:
   - name: register
 info:
   title: Digital Twins Event Gateway
-  version: 1.0.0
+  version: 1.3.1
   description: |
     The Gateway between Azure Digital Twins and the application microservices.
     ### Features:
@@ -32,6 +32,7 @@ channels:
   room-events:
     description: The topic on which room events are published and consumed.
     subscribe:
+      operationId: getRoomEvent
       summary: |
         Send room informations such as temperature, luminosity, humidity, etc.
       message:
@@ -44,16 +45,20 @@ channels:
   process-events:
     description: The topic on which process events are published and consumed.
     subscribe:
+      operationId: getProcessEvent
       summary: |
         Send all process events.
       message:
         oneOf:
           - "$ref": '#/components/messages/medicalDeviceUsageEvent'
           - "$ref": "#/components/messages/processInfoEvent"
+          - "$ref": '#/components/messages/medicalTechnologyUsageEvent'
+
 
   tracking-events:
     description: The topic on which health professionals tracking events are published and consumed.
     subscribe:
+      operationId: getTrackingEvents
       summary: |
         Send the tracking event of a health professional within an operating block room.
       message:
@@ -104,6 +109,13 @@ components:
       contentType: application/json
       payload:
         $ref: "#/components/schemas/processInfoEventPayload"
+    medicalTechnologyUsageEvent:
+      name: medicalTechnologyUsageEvent
+      title: The Medical Technology Usage Event
+      summary: the event of usage of a medical technology in a process.
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/medicalTechnologyUsageEventPayload"
 
     trackingEvent:
       name: trackingEvent
@@ -191,7 +203,18 @@ components:
         dateTime:
           type: string
           description: the timestamp of the event.
-
+    medicalTechnologyUsageEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        data:
+          type: object
+          $ref: "#/components/schemas/medicalTechnologyUsage"
+        dateTime:
+          type: string
+          description: the timestamp of the event.
     processInfoEventPayload:
       type: object
       properties:
@@ -267,6 +290,16 @@ components:
         processId:
           type: string
           description: The id of the process.
+
+    medicalTechnologyUsage:
+      type: object
+      properties:
+        medicalTechnologyID:
+          type: string
+          description: The id of the medical technology.
+        isInUse:
+          type: boolean
+          description: true if the technology is in use, false otherwise.
 
     processInfo:
       type: object
