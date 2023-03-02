@@ -1,3 +1,15 @@
+## [1.3.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.2.1...1.3.0) (2023-03-02)
+
+
+### Features
+
+* add medical technology usage event ([9ca07b2](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/9ca07b2c67ab0239368b2ea0262a66a2887ec9ab))
+
+
+### General maintenance
+
+* update readme with sonarcloud badges and usage section ([6bb8256](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6bb8256dfba49a89a90682caab3e176e1d90245a))
+
 ## [1.2.1](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.2.0...1.2.1) (2023-03-01)
 
 
