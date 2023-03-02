@@ -25,7 +25,9 @@ import entities.process.PatientData.PatientData
 import entities.process.PatientData.RespiratoryRate
 import entities.process.PatientData.Saturation
 import entities.process.PatientData.SystolicPressure
-import entities.process.ProcessData
+import entities.process.ProcessData.MedicalTechnologyUsage
+import entities.process.ProcessData.ProcessInfo
+import infrastructure.digitaltwins.events.TwinProperties.DTModelID.MEDICAL_TECHNOLOGY_MODEL_ID
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.OPERATING_ROOM_MODEL_ID
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.PATIENT_MODEL_ID
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.PRE_OPERATING_ROOM_MODEL_ID
@@ -37,6 +39,7 @@ import infrastructure.digitaltwins.events.TwinProperties.PatientProperties.IS_ON
 import infrastructure.digitaltwins.events.TwinProperties.PatientProperties.RESPIRATORY_RATE
 import infrastructure.digitaltwins.events.TwinProperties.PatientProperties.SATURATION_PERCENTAGE
 import infrastructure.digitaltwins.events.TwinProperties.PatientProperties.SYSTOLIC_PRESSURE
+import infrastructure.digitaltwins.events.TwinProperties.ProcessProperties.MEDICAL_TECHNOLOGY
 import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.HUMIDITY
 import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.LUMINOSITY
 import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.PRESENCE
@@ -58,7 +61,7 @@ class UpdateEventParser {
             OPERATING_ROOM_MODEL_ID.id, PRE_OPERATING_ROOM_MODEL_ID.id -> {
                 manageRoomEvents(updateTwinEvent)
             }
-            PATIENT_MODEL_ID.id, PROCESS_MODEL_ID.id -> {
+            PATIENT_MODEL_ID.id, PROCESS_MODEL_ID.id, MEDICAL_TECHNOLOGY_MODEL_ID.id -> {
                 manageProcessEvents(updateTwinEvent)
             }
             else -> EmptyEvent()
@@ -95,7 +98,7 @@ class UpdateEventParser {
         when (updateTwinEvent.data.patch[0].path) {
             IS_ON_OPERATING_TABLE.path -> {
                 ProcessEvent(
-                    data = ProcessData.ProcessInfo("Patient on Operating Bed", updateTwinEvent.id),
+                    data = ProcessInfo("Patient on Operating Bed", updateTwinEvent.id),
                     dateTime = updateTwinEvent.eventDateTime
                 )
             }
@@ -149,6 +152,15 @@ class UpdateEventParser {
                     data = PatientData(
                         updateTwinEvent.id,
                         Heartbeat(updateTwinEvent.data.patch[0].value as Int)
+                    ),
+                    dateTime = updateTwinEvent.eventDateTime
+                )
+            }
+            MEDICAL_TECHNOLOGY.path -> {
+                ProcessEvent(
+                    data = MedicalTechnologyUsage(
+                        updateTwinEvent.id,
+                        updateTwinEvent.data.patch[0].value as Boolean
                     ),
                     dateTime = updateTwinEvent.eventDateTime
                 )

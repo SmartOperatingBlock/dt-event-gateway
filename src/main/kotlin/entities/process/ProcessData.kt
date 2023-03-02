@@ -26,4 +26,10 @@ object ProcessData {
      * @param processId the id of the surgical process.
      */
     data class ProcessInfo(val info: String, val processId: String)
+
+    /**
+     * The event of medical technology usage given its [medicalTechnologyID].
+     * @param isInUse true if the medical technology is in use, false otherwise.
+     */
+    data class MedicalTechnologyUsage(val medicalTechnologyID: String, val isInUse: Boolean)
 }

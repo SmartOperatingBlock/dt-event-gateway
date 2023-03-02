@@ -25,6 +25,14 @@ object TwinProperties {
     }
 
     /**
+     * The properties path of Process events.
+     * @param path the property path.
+     */
+    enum class ProcessProperties(val path: String) {
+        MEDICAL_TECHNOLOGY("/is_in_use")
+    }
+
+    /**
      * The properties path of Patient Model.
      * @param path the property path.
      */
@@ -35,7 +43,7 @@ object TwinProperties {
         IS_ON_OPERATING_TABLE("/is_on_operating_table"),
         RESPIRATORY_RATE("/respiratory_rate"),
         SATURATION_PERCENTAGE("/saturation_percentage"),
-        HEARTBEAT("/heart_beat")
+        HEARTBEAT("/heart_beat"),
     }
 
     /**
@@ -48,7 +56,8 @@ object TwinProperties {
         PROCESS_MODEL_ID("dtmi:io:github:smartoperatingblock:SurgicalProcess;1"),
         PATIENT_MODEL_ID("dtmi:io:github:smartoperatingblock:Patient;1"),
         HEALTH_PROFESSIONAL_MODEL_ID("dtmi:io:github:smartoperatingblock:HealthProfessional;1"),
-        SURGERY_BOOKING_MODEL_ID("dtmi:io:github:smartoperatingblock:SurgeryBooking;1")
+        SURGERY_BOOKING_MODEL_ID("dtmi:io:github:smartoperatingblock:SurgeryBooking;1"),
+        MEDICAL_TECHNOLOGY_MODEL_ID("dtmi:io:github:smartoperatingblock:MedicalTechnology;1")
     }
 
     /**
