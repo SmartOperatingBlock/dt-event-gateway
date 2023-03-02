@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.3.0...1.3.1) (2023-03-02)
+
+
+### Documentation
+
+* **asyncapi:** add documentation for medical technology usage event ([344f871](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/344f871545343363e511d15f9cdfd285206eb58f))
+
 ## [1.3.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.2.1...1.3.0) (2023-03-02)
 
 
