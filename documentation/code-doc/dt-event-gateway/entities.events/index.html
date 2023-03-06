@@ -42,6 +42,9 @@
     <div>
     </div>
     <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm</button>
+        </div>
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
     </div>
@@ -51,101 +54,103 @@
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageIds="dt-event-gateway::entities.events////PointingToDeclaration//769193423">
+<div class="main-content" data-page-type="package" id="content" pageIds="dt-event-gateway::entities.events////PointingToDeclaration//769193423">
   <div class="breadcrumbs"><a href="../../index.html">dt-event-gateway</a><span class="delimiter">/</span><span class="current">entities.events</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
     <div class="tabs-section-body">
-      <h2 class="">Types</h2>
-      <div class="table" data-togglable="Types"><a data-name="364104635%2FClasslikes%2F769193423" anchor-label="EmptyEvent" id="364104635%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-empty-event/index.html"><span>Empty</span><wbr></wbr><span><span>Event</span></span></a></div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="364104635%2FClasslikes%2F769193423" anchor-label="EmptyEvent" id="364104635%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-empty-event/index.html"><span>Empty</span><wbr></wbr><span><span>Event</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="364104635%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-empty-event/index.html">EmptyEvent</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;EMPTY_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator"> = </span><span class="token string">&quot;EMPTY_DATA&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;EMPTY_DATA&quot;</span></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event sent when the input has not to be propagated to the microservices.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-empty-event/index.html">EmptyEvent</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;EMPTY_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator"> = </span><span class="token string">&quot;EMPTY_DATA&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;EMPTY_DATA&quot;</span></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event sent when the input has not to be propagated to the microservices.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1133986880%2FClasslikes%2F769193423" anchor-label="Event" id="1133986880%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-event/index.html"><span><span>Event</span></span></a></div>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-event/index.html"><span><span>Event</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1133986880%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="-event/index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The interface of a generic event.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="-event/index.html">E</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">The interface of a generic event.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-440824931%2FClasslikes%2F769193423" anchor-label="ProcessEvent" id="-440824931%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-process-event/index.html"><span>Process</span><wbr></wbr><span><span>Event</span></span></a></div>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-process-event/index.html"><span>Process</span><wbr></wbr><span><span>Event</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-440824931%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-process-event/index.html">ProcessEvent</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-process-event/index.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;PROCESS_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-process-event/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-process-event/index.html">E</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event of change of state in the surgical process.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-process-event/index.html">ProcessEvent</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-process-event/index.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;PROCESS_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-process-event/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-process-event/index.html">E</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event of change of state in the surgical process.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-203766917%2FClasslikes%2F769193423" anchor-label="RoomEvent" id="-203766917%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-room-event/index.html"><span>Room</span><wbr></wbr><span><span>Event</span></span></a></div>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-room-event/index.html"><span>Room</span><wbr></wbr><span><span>Event</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-203766917%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-room-event/index.html">RoomEvent</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-room-event/index.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;ROOM_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roomId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-room-event/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-room-event/index.html">E</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event of change of humidity in a room of the operating block.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-room-event/index.html">RoomEvent</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-room-event/index.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;ROOM_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roomId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-room-event/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-room-event/index.html">E</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event of change of humidity in a room of the operating block.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="-1235849660%2FClasslikes%2F769193423" anchor-label="SurgeryBookingEvent" id="-1235849660%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-surgery-booking-event/index.html"><span>Surgery</span><wbr></wbr><span>Booking</span><wbr></wbr><span><span>Event</span></span></a></div>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-surgery-booking-event/index.html"><span>Surgery</span><wbr></wbr><span>Booking</span><wbr></wbr><span><span>Event</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1235849660%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-surgery-booking-event/index.html">SurgeryBookingEvent</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-surgery-booking-event/index.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;SURGERY_BOOKING_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-surgery-booking-event/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-surgery-booking-event/index.html">E</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event of a surgery booking.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-surgery-booking-event/index.html">SurgeryBookingEvent</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-surgery-booking-event/index.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;SURGERY_BOOKING_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-surgery-booking-event/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-surgery-booking-event/index.html">E</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event of a surgery booking.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 <a data-name="1755126743%2FClasslikes%2F769193423" anchor-label="TrackingEvent" id="1755126743%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-        <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-          <div class="main-subrow keyValue ">
-            <div class=""><span class="inline-flex">
-                <div><a href="-tracking-event/index.html"><span>Tracking</span><wbr></wbr><span><span>Event</span></span></a></div>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tracking-event/index.html"><span>Tracking</span><wbr></wbr><span><span>Event</span></span></a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1755126743%2FClasslikes%2F769193423"></span>
-                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                </span></span></div>
-            <div>
-              <div class="title">
-                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-tracking-event/index.html">TrackingEvent</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-tracking-event/index.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;TRACKING_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>healthProfessionalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roomId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-tracking-event/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-tracking-event/index.html">E</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event of health professionals tracking inside the operating block rooms.</p></div></div></div>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-tracking-event/index.html">TrackingEvent</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-tracking-event/index.html">E</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;TRACKING_EVENT&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>healthProfessionalId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roomId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-tracking-event/index.html">E</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dateTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-event/index.html">Event</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-tracking-event/index.html">E</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The event of health professionals tracking inside the operating block rooms.</p></div></div></div>
+                </div>
               </div>
             </div>
           </div>
