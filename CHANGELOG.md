@@ -1,3 +1,20 @@
+## [1.3.2](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.3.1...1.3.2) (2023-03-06)
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.0.2 ([2904423](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/2904423781fbe9159a5f3ba8eb166e8a7ad214d2))
+* **deps:** update plugin com.gradle.enterprise to v3.12.4 ([7474ecd](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/7474ecd133b2cfe058c8bcaa53e75d11aed93fb3))
+* **deps:** update plugin kotlin-qa to v0.35.0 ([7ebecd7](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/7ebecd7ad1336e8d9e9fbe04c4c4c2074603658b))
+* **deps:** update plugin kotlin-qa to v0.36.0 ([a1b1936](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a1b1936c1435ce2071c6c8df2b842c884b8093eb))
+* **deps:** update plugin kotlin-qa to v0.36.1 ([95a222f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/95a222f1e5b20091cbe629d26316e4f4295d33ec))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.5 ([5e581e3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5e581e32d98026f4a098ec8561eb4e98c547f769))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.8.10 ([f73a7b9](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/f73a7b95b06fb1e847493a4ab9c68b077c70626d))
+
 ## [1.3.1](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.3.0...1.3.1) (2023-03-02)
 
 
