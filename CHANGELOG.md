@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.3.2...1.4.0) (2023-03-07)
+
+
+### Features
+
+* **events:** use different event keys for kafka events ([d82987b](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d82987be342bbf085664dde851b65d48d324096e))
+
 ## [1.3.2](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.3.1...1.3.2) (2023-03-06)
 
 
