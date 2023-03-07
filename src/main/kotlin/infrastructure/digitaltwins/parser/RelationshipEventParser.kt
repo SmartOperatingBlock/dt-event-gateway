@@ -16,6 +16,7 @@ import entities.process.ProcessData
 import infrastructure.digitaltwins.events.RelationshipEvents
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.HEALTH_PROFESSIONAL_MODEL_ID
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.PROCESS_MODEL_ID
+import infrastructure.kafka.EventProperties.EventKeys
 
 /**
  * The parser of Azure Digital Twins Relationship Events.
@@ -44,6 +45,7 @@ class RelationshipEventParser {
             PROCESS_MODEL_ID.id -> {
                 when (createdRelationship.data.relationshipName) {
                     "rel_use" -> ProcessEvent(
+                        key = EventKeys.MEDICAL_DEVICE_USAGE_EVENT.name,
                         data = ProcessData.MedicalDeviceUsage(
                             createdRelationship.data.targetId,
                             createdRelationship.data.sourceId

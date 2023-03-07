@@ -45,6 +45,7 @@ import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.LUMINOSI
 import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.PRESENCE
 import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.TEMPERATURE
 import infrastructure.digitaltwins.events.UpdateEvents
+import infrastructure.kafka.EventProperties.EventKeys
 
 /**
  * The parser of Azure Digital Twins Update Events.
@@ -70,22 +71,26 @@ class UpdateEventParser {
     private fun manageRoomEvents(updateTwinEvent: UpdateEvents.UpdateTwinEvent): Event<Any> =
         when (updateTwinEvent.data.patch[0].path) {
             TEMPERATURE.path -> RoomEvent(
+                key = EventKeys.TEMPERATURE_EVENT.name,
                 roomId = updateTwinEvent.id,
                 data = Temperature((updateTwinEvent.data.patch[0].value as Number).toDouble(), TemperatureUnit.CELSIUS),
                 dateTime = updateTwinEvent.eventDateTime
             )
             HUMIDITY.path -> RoomEvent(
+                key = EventKeys.HUMIDITY_EVENT.name,
                 roomId = updateTwinEvent.id,
                 data = Humidity(updateTwinEvent.data.patch[0].value as Int),
                 dateTime = updateTwinEvent.eventDateTime
             )
             LUMINOSITY.path -> RoomEvent(
+                key = EventKeys.LUMINOSITY_EVENT.name,
                 roomId = updateTwinEvent.id,
                 data = Luminosity((updateTwinEvent.data.patch[0].value as Number).toDouble(), LuminosityUnit.LUX),
                 dateTime = updateTwinEvent.eventDateTime
             )
             PRESENCE.path -> {
                 RoomEvent(
+                    key = EventKeys.PRESENCE_EVENT.name,
                     roomId = updateTwinEvent.id,
                     data = Presence(updateTwinEvent.data.patch[0].value as Boolean),
                     dateTime = updateTwinEvent.eventDateTime
@@ -98,12 +103,14 @@ class UpdateEventParser {
         when (updateTwinEvent.data.patch[0].path) {
             IS_ON_OPERATING_TABLE.path -> {
                 ProcessEvent(
+                    key = EventKeys.PATIENT_ON_OB_EVENT.name,
                     data = ProcessInfo("Patient on Operating Bed", updateTwinEvent.id),
                     dateTime = updateTwinEvent.eventDateTime
                 )
             }
             BODY_TEMPERATURE.path -> {
                 ProcessEvent(
+                    key = EventKeys.PATIENT_BODY_TEMPERATURE_UPDATE_EVENT.name,
                     data = PatientData(
                         updateTwinEvent.id,
                         BodyTemperature((updateTwinEvent.data.patch[0].value as Number).toDouble())
@@ -113,6 +120,7 @@ class UpdateEventParser {
             }
             DIASTOLIC_PRESSURE.path -> {
                 ProcessEvent(
+                    key = EventKeys.PATIENT_DIASTOLIC_PRESSURE_UPDATE_EVENT.name,
                     data = PatientData(
                         updateTwinEvent.id,
                         DiastolicPressure(updateTwinEvent.data.patch[0].value as Int)
@@ -122,6 +130,7 @@ class UpdateEventParser {
             }
             SYSTOLIC_PRESSURE.path -> {
                 ProcessEvent(
+                    key = EventKeys.PATIENT_SYSTOLIC_PRESSURE_UPDATE_EVENT.name,
                     data = PatientData(
                         updateTwinEvent.id,
                         SystolicPressure(updateTwinEvent.data.patch[0].value as Int)
@@ -131,6 +140,7 @@ class UpdateEventParser {
             }
             RESPIRATORY_RATE.path -> {
                 ProcessEvent(
+                    key = EventKeys.PATIENT_RESPIRATORY_RATE_UPDATE_EVENT.name,
                     data = PatientData(
                         updateTwinEvent.id,
                         RespiratoryRate(updateTwinEvent.data.patch[0].value as Int)
@@ -140,6 +150,7 @@ class UpdateEventParser {
             }
             SATURATION_PERCENTAGE.path -> {
                 ProcessEvent(
+                    key = EventKeys.PATIENT_SATURATION_UPDATE_EVENT.name,
                     data = PatientData(
                         updateTwinEvent.id,
                         Saturation(updateTwinEvent.data.patch[0].value as Int)
@@ -149,6 +160,7 @@ class UpdateEventParser {
             }
             HEARTBEAT.path -> {
                 ProcessEvent(
+                    key = EventKeys.PATIENT_HEARTBEAT_UPDATE_EVENT.name,
                     data = PatientData(
                         updateTwinEvent.id,
                         Heartbeat(updateTwinEvent.data.patch[0].value as Int)
@@ -158,6 +170,7 @@ class UpdateEventParser {
             }
             MEDICAL_TECHNOLOGY.path -> {
                 ProcessEvent(
+                    key = EventKeys.MEDICAL_TECHNOLOGY_USAGE_EVENT.name,
                     data = MedicalTechnologyUsage(
                         updateTwinEvent.id,
                         updateTwinEvent.data.patch[0].value as Boolean

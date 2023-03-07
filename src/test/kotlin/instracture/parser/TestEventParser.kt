@@ -9,6 +9,7 @@
 package instracture.parser
 
 import infrastructure.digitaltwins.parser.DTEventParser
+import infrastructure.kafka.EventProperties.EventKeys
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe
@@ -28,19 +29,19 @@ class TestEventParser : StringSpec({
     "DT parser should parse room event of temperature update" {
         val event = parser.parseEvent(temperatureUpdateEvent)
         event shouldNotBe null
-        event.key shouldBe "ROOM_EVENT"
+        event.key shouldBe EventKeys.TEMPERATURE_EVENT.name
     }
 
     "DT parser should parse room event of humidity update" {
         val event = parser.parseEvent(humidityUpdateEvent)
         event shouldNotBe null
-        event.key shouldBe "ROOM_EVENT"
+        event.key shouldBe EventKeys.HUMIDITY_EVENT.name
     }
 
     "DT parser should parse room event of luminosity update" {
         val event = parser.parseEvent(luminosityUpdateEvent)
         event shouldNotBe null
-        event.key shouldBe "ROOM_EVENT"
+        event.key shouldBe EventKeys.LUMINOSITY_EVENT.name
     }
 
     "DT parser should parse tracking event" {
