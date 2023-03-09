@@ -8,12 +8,14 @@
 
 package entities.events
 
+import infrastructure.kafka.EventProperties.EventKey
+
 /**
  * The event of change of humidity in a room of the operating block.
  */
 data class RoomEvent<E : Any> (
 
-    override val key: String = "ROOM_EVENT",
+    override val key: EventKey,
     /**
      * The room ID.
      */

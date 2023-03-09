@@ -8,12 +8,14 @@
 
 package entities.events
 
+import infrastructure.kafka.EventProperties.EventKey
+
 /**
  * The event of health professionals tracking inside the operating block rooms.
  */
 data class TrackingEvent<E : Any> (
 
-    override val key: String = "TRACKING_EVENT",
+    override val key: EventKey = EventKey.TRACKING_EVENT,
 
     /**
      * The health professional ID.

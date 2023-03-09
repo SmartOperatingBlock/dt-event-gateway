@@ -40,17 +40,10 @@ class KafkaPublisher : EventPublisher<Event<*>> {
         "value.serializer" to KafkaJsonSerializer::class.java
     )
 
-    private val eventToTopic: Map<String, String> = mapOf(
-        "ROOM_EVENT" to "room-events",
-        "PROCESS_EVENT" to "process-events",
-        "TRACKING_EVENT" to "tracking-events",
-        "SURGERY_BOOKING_EVENT" to "surgery-bookings-events"
-    )
-
     private val producer: KafkaProducer<String, Event<*>> = KafkaProducer(producerProps)
 
     override fun publishEvent(event: Event<*>) {
-        val record = ProducerRecord(eventToTopic[event.key], event.key, event)
+        val record = ProducerRecord(event.key.topicName, event.key.toString(), event)
         producer.send(record)
     }
 }

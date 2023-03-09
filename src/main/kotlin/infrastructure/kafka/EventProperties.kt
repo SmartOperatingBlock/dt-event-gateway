@@ -11,20 +11,23 @@ package infrastructure.kafka
 /** Module with some event properties. */
 object EventProperties {
 
-    /** The keys of the events. */
-    enum class EventKeys {
-        MEDICAL_DEVICE_USAGE_EVENT,
-        MEDICAL_TECHNOLOGY_USAGE_EVENT,
-        TEMPERATURE_EVENT,
-        HUMIDITY_EVENT,
-        LUMINOSITY_EVENT,
-        PRESENCE_EVENT,
-        PATIENT_ON_OB_EVENT,
-        PATIENT_BODY_TEMPERATURE_UPDATE_EVENT,
-        PATIENT_DIASTOLIC_PRESSURE_UPDATE_EVENT,
-        PATIENT_SYSTOLIC_PRESSURE_UPDATE_EVENT,
-        PATIENT_RESPIRATORY_RATE_UPDATE_EVENT,
-        PATIENT_SATURATION_UPDATE_EVENT,
-        PATIENT_HEARTBEAT_UPDATE_EVENT
+    /** The keys of the events and the [topicName] on which publish the event . */
+    enum class EventKey(val topicName: String) {
+        MEDICAL_DEVICE_USAGE_EVENT("process-events"),
+        MEDICAL_TECHNOLOGY_USAGE_EVENT("process-events"),
+        TEMPERATURE_EVENT("room-events"),
+        HUMIDITY_EVENT("room-events"),
+        LUMINOSITY_EVENT("room-events"),
+        PRESENCE_EVENT("room-events"),
+        PATIENT_ON_OB_EVENT("process-events"),
+        PATIENT_BODY_TEMPERATURE_UPDATE_EVENT("process-events"),
+        PATIENT_DIASTOLIC_PRESSURE_UPDATE_EVENT("process-events"),
+        PATIENT_SYSTOLIC_PRESSURE_UPDATE_EVENT("process-events"),
+        PATIENT_RESPIRATORY_RATE_UPDATE_EVENT("process-events"),
+        PATIENT_SATURATION_UPDATE_EVENT("process-events"),
+        PATIENT_HEARTBEAT_UPDATE_EVENT("process-events"),
+        EMPTY_EVENT(""),
+        TRACKING_EVENT("tracking-events"),
+        SURGERY_BOOKINGS_EVENT("surgery-bookings-events")
     }
 }

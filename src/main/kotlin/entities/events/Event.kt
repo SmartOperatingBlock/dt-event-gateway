@@ -8,6 +8,8 @@
 
 package entities.events
 
+import infrastructure.kafka.EventProperties.EventKey
+
 /**
  * The interface of a generic event.
  */
@@ -16,7 +18,7 @@ interface Event<out E> {
     /**
      * The key of the event. Every type of event has its unique key.
      */
-    val key: String
+    val key: EventKey
 
     /**
      * The data of the event.

@@ -8,12 +8,14 @@
 
 package entities.events
 
+import infrastructure.kafka.EventProperties.EventKey
+
 /**
  * The event of a surgery booking.
  */
 data class SurgeryBookingEvent<E : Any> (
 
-    override val key: String = "SURGERY_BOOKING_EVENT",
+    override val key: EventKey = EventKey.SURGERY_BOOKINGS_EVENT,
 
     override val data: E,
 

@@ -8,11 +8,13 @@
 
 package entities.events
 
+import infrastructure.kafka.EventProperties.EventKey
+
 /**
  * The event sent when the input has not to be propagated to the microservices.
  */
 data class EmptyEvent(
-    override val key: String = "EMPTY_EVENT",
+    override val key: EventKey = EventKey.EMPTY_EVENT,
     override val data: Any = "EMPTY_DATA",
     override val dateTime: String = "EMPTY_DATA"
 ) : Event<Any>

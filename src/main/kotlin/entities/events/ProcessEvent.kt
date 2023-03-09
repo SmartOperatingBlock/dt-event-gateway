@@ -8,12 +8,14 @@
 
 package entities.events
 
+import infrastructure.kafka.EventProperties.EventKey
+
 /**
  * The event of change of state in the surgical process.
  */
 data class ProcessEvent<E : Any>(
 
-    override val key: String = "PROCESS_EVENT",
+    override val key: EventKey,
 
     override val data: E,
 
