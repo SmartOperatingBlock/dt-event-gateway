@@ -1,3 +1,20 @@
+## [1.4.1](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.4.0...1.4.1) (2023-03-09)
+
+
+### Bug Fixes
+
+* change type of event key in events schema ([06494b8](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/06494b8edb223512db0d2d355acf08e09b26b95e))
+
+
+### Dependency updates
+
+* **deps:** update node.js to 18.15 ([3d2179f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/3d2179f020cd08dd4a17df13676f7e58dc5f04ff))
+
+
+### Refactoring
+
+* move event key enum in entity package ([f10aa15](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/f10aa157db7fe6fc345270067ccf2685e5870656))
+
 ## [1.4.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.3.2...1.4.0) (2023-03-07)
 
 
