@@ -8,7 +8,7 @@
 
 package entities.events
 
-import infrastructure.kafka.EventProperties.EventKey
+import entities.events.EventProperties.EventKey
 
 /**
  * The interface of a generic event.

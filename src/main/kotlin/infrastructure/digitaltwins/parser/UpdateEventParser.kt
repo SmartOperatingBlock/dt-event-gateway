@@ -16,6 +16,7 @@ import entities.environment.EnvironmentData.Temperature
 import entities.environment.EnvironmentData.TemperatureUnit
 import entities.events.EmptyEvent
 import entities.events.Event
+import entities.events.EventProperties.EventKey
 import entities.events.ProcessEvent
 import entities.events.RoomEvent
 import entities.process.PatientData.BodyTemperature
@@ -45,7 +46,6 @@ import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.LUMINOSI
 import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.PRESENCE
 import infrastructure.digitaltwins.events.TwinProperties.RoomProperties.TEMPERATURE
 import infrastructure.digitaltwins.events.UpdateEvents
-import infrastructure.kafka.EventProperties.EventKey
 
 /**
  * The parser of Azure Digital Twins Update Events.

@@ -8,8 +8,8 @@
 
 package instracture.parser
 
+import entities.events.EventProperties.EventKey
 import infrastructure.digitaltwins.parser.DTEventParser
-import infrastructure.kafka.EventProperties.EventKey
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.shouldNotBe

@@ -8,7 +8,7 @@
 
 package entities.events
 
-import infrastructure.kafka.EventProperties.EventKey
+import entities.events.EventProperties.EventKey
 
 /**
  * The event of health professionals tracking inside the operating block rooms.

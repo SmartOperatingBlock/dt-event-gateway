@@ -8,7 +8,7 @@
 
 package entities.events
 
-import infrastructure.kafka.EventProperties.EventKey
+import entities.events.EventProperties.EventKey
 
 /**
  * The event sent when the input has not to be propagated to the microservices.

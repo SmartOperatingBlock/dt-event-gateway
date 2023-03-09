@@ -6,7 +6,7 @@
  * https://opensource.org/licenses/MIT.
  */
 
-package infrastructure.kafka
+package entities.events
 
 /** Module with some event properties. */
 object EventProperties {
