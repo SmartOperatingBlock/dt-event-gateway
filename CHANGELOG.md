@@ -1,3 +1,15 @@
+## [1.5.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.4.1...1.5.0) (2023-03-10)
+
+
+### Features
+
+* make the signalr connection persistent ([e57cb70](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e57cb703acc36a9d9daa2c52a4026e9141f3df77))
+
+
+### Bug Fixes
+
+* change property name due to serialization bug ([04de8ef](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/04de8ef56b70633991ac4b347ce590f58435b3e9))
+
 ## [1.4.1](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.4.0...1.4.1) (2023-03-09)
 
 
