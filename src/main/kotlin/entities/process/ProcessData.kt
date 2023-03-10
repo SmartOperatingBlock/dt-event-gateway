@@ -29,7 +29,7 @@ object ProcessData {
 
     /**
      * The event of medical technology usage given its [medicalTechnologyID].
-     * @param isInUse true if the medical technology is in use, false otherwise.
+     * @param inUse true if the medical technology is in use, false otherwise.
      */
-    data class MedicalTechnologyUsage(val medicalTechnologyID: String, val isInUse: Boolean)
+    data class MedicalTechnologyUsage(val medicalTechnologyID: String, val inUse: Boolean)
 }
