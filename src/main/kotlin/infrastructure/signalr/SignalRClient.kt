@@ -10,7 +10,9 @@ package infrastructure.signalr
 
 import application.presenter.EventConsumer
 import application.presenter.EventParser
+import com.microsoft.signalr.HubConnection
 import com.microsoft.signalr.HubConnectionBuilder
+import com.microsoft.signalr.HubConnectionState
 import entities.events.EmptyEvent
 import entities.events.Event
 import infrastructure.digitaltwins.parser.DTEventParser
@@ -37,8 +39,17 @@ class SignalRClient : EventConsumer<String> {
                 emitter.onNext(event)
             }
         }, String::class.java)
-        connection.start()
+        connection.persistentStart()
     }
 
     override fun consumeEvent(inputEvent: String): Event<Any> = eventParser.parseEvent(inputEvent)
+
+    private fun HubConnection.persistentStart() {
+        this.start().blockingAwait()
+        this.onClosed {
+            if (this.connectionState == HubConnectionState.DISCONNECTED) {
+                this.persistentStart()
+            }
+        }
+    }
 }
