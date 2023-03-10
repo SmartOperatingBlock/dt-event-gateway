@@ -122,7 +122,7 @@ $dokka.location:entities.process/ProcessData.MedicalDeviceUsage/medicalDeviceID/
 $dokka.location:entities.process/ProcessData.MedicalDeviceUsage/processId/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-medical-device-usage/process-id.html
 $dokka.location:entities.process/ProcessData.MedicalTechnologyUsage///PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-medical-technology-usage/index.html
 $dokka.location:entities.process/ProcessData.MedicalTechnologyUsage/MedicalTechnologyUsage/#kotlin.String#kotlin.Boolean/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-medical-technology-usage/-medical-technology-usage.html
-$dokka.location:entities.process/ProcessData.MedicalTechnologyUsage/isInUse/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-medical-technology-usage/is-in-use.html
+$dokka.location:entities.process/ProcessData.MedicalTechnologyUsage/inUse/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-medical-technology-usage/in-use.html
 $dokka.location:entities.process/ProcessData.MedicalTechnologyUsage/medicalTechnologyID/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-medical-technology-usage/medical-technology-i-d.html
 $dokka.location:entities.process/ProcessData.ProcessInfo///PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-process-info/index.html
 $dokka.location:entities.process/ProcessData.ProcessInfo/ProcessInfo/#kotlin.String#kotlin.String/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-process-info/-process-info.html
