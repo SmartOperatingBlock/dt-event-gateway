@@ -10,8 +10,8 @@
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=SmartOperatingBlock_dt-event-gateway&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=SmartOperatingBlock_dt-event-gateway)
 
 The Event Gateway between Digital Twins and Microservices.
-
-It's responsible to consume events from **Azure Digital Twins** through **Azure SignalR** service and to propagate them to application microservices through a **Kafka Event Broker**.
+- Consume events from <strong>Azure Digital Twins</strong> through <strong>Azure SignalR</strong> service.
+- Propagate events to application microservices through a <strong>Kafka Event Broker</strong>.
 
 ## Usage
 1. Provide a `.env` file with the following variables:
@@ -19,13 +19,18 @@ It's responsible to consume events from **Azure Digital Twins** through **Azure 
    - SCHEMA_REGISTRY_URL
    - SIGNALR_CONNECTION_STRING
 2. Run the container with the following command:\
-    `docker run ghcr.io/smartoperatingblock/dt-event-gateway:1.2.1`
+    ```bash
+    docker run ghcr.io/smartoperatingblock/dt-event-gateway:1.2.1
+    ```
 
 
 ## Documentation
+- Visit the website here  [here](https://smartoperatingblock.github.io/dt-event-gateway)
 - Check out the *AsyncAPI* documentation [here](https://smartoperatingblock.github.io/dt-event-gateway/documentation/asyncapi-doc)
-- Check out the latest code documentation [here](https://smartoperatingblock.github.io/dt-event-gateway/documentation/code-doc)
+- Check out the code documentation [here](https://smartoperatingblock.github.io/dt-event-gateway/documentation/code-doc)
 
----
+<hr>
 
-![](https://raw.githubusercontent.com/SmartOperatingBlock/documentation/main/imgs/dt-event-gateway-schema.svg)
+<p align="center">
+<img src="https://raw.githubusercontent.com/SmartOperatingBlock/documentation/main/imgs/dt-event-gateway-schema.svg"  width=700px height=300px/>
+</p>
