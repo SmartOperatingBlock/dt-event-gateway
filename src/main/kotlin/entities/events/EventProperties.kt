@@ -27,6 +27,7 @@ object EventProperties {
         PATIENT_SATURATION_UPDATE_EVENT("process-events"),
         PATIENT_HEARTBEAT_UPDATE_EVENT("process-events"),
         EMPTY_EVENT(""),
+        PATIENT_TRACKED_EVENT("process-events"),
         TRACKING_EVENT("tracking-events"),
         SURGERY_BOOKINGS_EVENT("surgery-bookings-events")
     }

@@ -5,7 +5,8 @@
     "$sourceId":"health1",
     "$relationshipName":"rel_is_inside",
     "$targetId":"ProvaOperatingRoom",
-    "$sourceModel":"dtmi:io:github:smartoperatingblock:HealthProfessional;1"
+    "$sourceModel":"dtmi:io:github:smartoperatingblock:HealthProfessional;1",
+    "$targetModel":"dtmi:io:github:smartoperatingblock:OperatingRoom;1"
   },
   "contenttype":"application/json",
   "traceparent":"00-acc18931bfbcdac4cd520dc3b08fc871-53281297c87d648b-01",

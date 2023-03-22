@@ -41,7 +41,12 @@ object RelationshipEvents {
         /**
          * The model of the relationship source.
          */
-        val sourceModel: String
+        val sourceModel: String,
+
+        /**
+         * The model of the relationship target.
+         */
+        val targetModel: String
     )
 
     /**

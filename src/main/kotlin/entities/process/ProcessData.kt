@@ -32,4 +32,23 @@ object ProcessData {
      * @param inUse true if the medical technology is in use, false otherwise.
      */
     data class MedicalTechnologyUsage(val medicalTechnologyID: String, val inUse: Boolean)
+
+    /**
+     * The event of patient tracking inside the operating block.
+     * @param patientId the id of the patient.
+     * @param roomId the id of the room.
+     * @param entered true if is entered in the room, false otherwise.
+     * @param roomType the type of the room.
+     */
+    data class PatientTracked(
+        val patientId: String,
+        val roomId: String,
+        val entered: Boolean,
+        val roomType: RoomType
+    )
+
+    /** The type of the room where the patient is tracked. **/
+    enum class RoomType {
+        PRE_OPERATING_ROOM, OPERATING_ROOM
+    }
 }
