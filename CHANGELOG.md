@@ -1,3 +1,38 @@
+## [1.6.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.5.0...1.6.0) (2023-03-22)
+
+
+### Features
+
+* add patient tracking event ([4030eb5](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/4030eb5f182e561a969c31caeb1f785b5e0e0ccf))
+
+
+### General maintenance
+
+* update README.md ([ac745e3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ac745e3933406d82c973313b6e0104213cb831f0))
+
+
+### Build and continuous integration
+
+* add correct version of java ([9d26abc](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/9d26abca73ca20156dce93785cbfe1f1b4ba2fa3))
+
+
+### Dependency updates
+
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.6 ([1dd8814](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/1dd88142bb66fd3593c79c3f85664840fa290bc5))
+* **deps:** update dependency com.microsoft.signalr:signalr to v7.0.4 ([3a9c9e5](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/3a9c9e5c02721810bae7d2a349647891fcb8436d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.17 ([62a2abf](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/62a2abf97de6458c73cbf90e9ce396d49a3b8528))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.19 ([292adfe](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/292adfedd113380ad5acd3eae2c8ba3cac2655ed))
+
+
+### Documentation
+
+* add asyncapi documentation of patient tracked event ([6def919](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6def919e88df28bbb23f2eb38997c970763772cc))
+
+
+### Style improvements
+
+* remove sonarcloud code smells ([433d2c7](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/433d2c791d2bfe998f898fb48192e72ac5ec83e2))
+
 ## [1.5.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.4.1...1.5.0) (2023-03-10)
 
 
