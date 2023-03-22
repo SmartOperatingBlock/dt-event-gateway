@@ -53,6 +53,7 @@ channels:
           - "$ref": '#/components/messages/medicalDeviceUsageEvent'
           - "$ref": "#/components/messages/processInfoEvent"
           - "$ref": '#/components/messages/medicalTechnologyUsageEvent'
+          - "$ref": '#/components/messages/patientTrackedEvent'
 
 
   tracking-events:
@@ -116,6 +117,13 @@ components:
       contentType: application/json
       payload:
         $ref: "#/components/schemas/medicalTechnologyUsageEventPayload"
+    patientTrackedEvent:
+      name: patientTracked
+      title: The Tracking Event of a Patient
+      summary: the event about patient tracking.
+      contentType: application/json
+      payload:
+        $ref: "#/components/schemas/patientTrackedEventPayload"
 
     trackingEvent:
       name: trackingEvent
@@ -228,6 +236,19 @@ components:
           type: string
           description: the timestamp of the event.
 
+    patientTrackedEventPayload:
+      type: object
+      properties:
+        key:
+          type: string
+          description: The key of the event.
+        data:
+          type: object
+          $ref: "#/components/schemas/patientTracked"
+        dateTime:
+          type: string
+          description: the timestamp of the event.
+
     trackingEventPayload:
       type: object
       properties:
@@ -310,3 +331,19 @@ components:
         processId:
           type: string
           description: The id of the process.
+
+    patientTracked:
+      type: object
+      properties:
+        patientId:
+          type: string
+          description: The id of the tracked patient.
+        roomId:
+          type: string
+          description: The id of the room in which the patient is tracked.
+        entered:
+          type: boolean
+          description: True if the patient is entered, false if he's exited.
+        roomType:
+          type: string
+          description: The type of the room in which the patient is tracked.
