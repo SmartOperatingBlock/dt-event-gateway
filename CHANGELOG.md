@@ -1,3 +1,23 @@
+## [1.7.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.6.0...1.7.0) (2023-03-28)
+
+
+### Features
+
+* add room type to room events ([1edd90a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/1edd90ab9ddf33a0330619472908c1a6c5a0b798))
+
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.20 ([6ce7eb4](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6ce7eb40007968a9cd4d40b3395d60e3f35b1ef9))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.21 ([0c89f07](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0c89f076180d1fd2145e8d45f833906b3fe367d7))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.22 ([d016ee4](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d016ee42528911a73de68cfd5df4828f2b0f69da))
+* **deps:** update plugin com.gradle.enterprise to v3.12.6 ([36f8508](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/36f85089bf60d426462878060b9c0c68d1eeeeb6))
+
+
+### Documentation
+
+* **asyncapi:** add room type documentation ([a41ebb1](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a41ebb1021c05cb666ce4f9759d2ab3076c26183))
+
 ## [1.6.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.5.0...1.6.0) (2023-03-22)
 
 
