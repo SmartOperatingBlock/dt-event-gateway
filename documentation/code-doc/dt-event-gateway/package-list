@@ -80,11 +80,12 @@ $dokka.location:entities.events/ProcessEvent/data/#/PointingToDeclaration/dt-ev
 $dokka.location:entities.events/ProcessEvent/dateTime/#/PointingToDeclaration/dt-event-gateway/entities.events/-process-event/date-time.html
 $dokka.location:entities.events/ProcessEvent/key/#/PointingToDeclaration/dt-event-gateway/entities.events/-process-event/key.html
 $dokka.location:entities.events/RoomEvent///PointingToDeclaration/dt-event-gateway/entities.events/-room-event/index.html
-$dokka.location:entities.events/RoomEvent/RoomEvent/#entities.events.EventProperties.EventKey#kotlin.String#TypeParam(bounds=[kotlin.Any])#kotlin.String/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/-room-event.html
+$dokka.location:entities.events/RoomEvent/RoomEvent/#entities.events.EventProperties.EventKey#kotlin.String#entities.process.ProcessData.RoomType#TypeParam(bounds=[kotlin.Any])#kotlin.String/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/-room-event.html
 $dokka.location:entities.events/RoomEvent/data/#/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/data.html
 $dokka.location:entities.events/RoomEvent/dateTime/#/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/date-time.html
 $dokka.location:entities.events/RoomEvent/key/#/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/key.html
 $dokka.location:entities.events/RoomEvent/roomId/#/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/room-id.html
+$dokka.location:entities.events/RoomEvent/roomType/#/PointingToDeclaration/dt-event-gateway/entities.events/-room-event/room-type.html
 $dokka.location:entities.events/SurgeryBookingEvent///PointingToDeclaration/dt-event-gateway/entities.events/-surgery-booking-event/index.html
 $dokka.location:entities.events/SurgeryBookingEvent/SurgeryBookingEvent/#entities.events.EventProperties.EventKey#TypeParam(bounds=[kotlin.Any])#kotlin.String/PointingToDeclaration/dt-event-gateway/entities.events/-surgery-booking-event/-surgery-booking-event.html
 $dokka.location:entities.events/SurgeryBookingEvent/data/#/PointingToDeclaration/dt-event-gateway/entities.events/-surgery-booking-event/data.html
