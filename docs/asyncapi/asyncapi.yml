@@ -144,6 +144,9 @@ components:
         roomId:
           type: string
           description: The id of the room.
+        roomType:
+          type: string
+          description: The type of the room.
         data:
           type: object
           $ref: "#/components/schemas/temperature"
@@ -160,6 +163,9 @@ components:
         roomId:
           type: string
           description: The id of the room.
+        roomType:
+          type: string
+          description: The type of the room.
         data:
           type: object
           $ref: "#/components/schemas/humidity"
@@ -176,6 +182,9 @@ components:
         roomId:
           type: string
           description: The id of the room.
+        roomType:
+          type: string
+          description: The type of the room.
         data:
           type: object
           $ref: "#/components/schemas/luminosity"
@@ -192,6 +201,9 @@ components:
         roomId:
           type: string
           description: The id of the room.
+        roomType:
+          type: string
+          description: The type of the room.
         data:
           type: object
           $ref: "#/components/schemas/presence"
