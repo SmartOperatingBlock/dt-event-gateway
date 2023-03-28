@@ -26,6 +26,7 @@ import entities.process.PatientData.PatientData
 import entities.process.PatientData.RespiratoryRate
 import entities.process.PatientData.Saturation
 import entities.process.PatientData.SystolicPressure
+import entities.process.ProcessData
 import entities.process.ProcessData.MedicalTechnologyUsage
 import entities.process.ProcessData.ProcessInfo
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.MEDICAL_TECHNOLOGY_MODEL_ID
@@ -73,18 +74,27 @@ class UpdateEventParser {
             TEMPERATURE.path -> RoomEvent(
                 key = EventKey.TEMPERATURE_EVENT,
                 roomId = updateTwinEvent.id,
+                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id)
+                    ProcessData.RoomType.OPERATING_ROOM
+                else ProcessData.RoomType.PRE_OPERATING_ROOM,
                 data = Temperature((updateTwinEvent.data.patch[0].value as Number).toDouble(), TemperatureUnit.CELSIUS),
                 dateTime = updateTwinEvent.eventDateTime
             )
             HUMIDITY.path -> RoomEvent(
                 key = EventKey.HUMIDITY_EVENT,
                 roomId = updateTwinEvent.id,
+                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id)
+                    ProcessData.RoomType.OPERATING_ROOM
+                else ProcessData.RoomType.PRE_OPERATING_ROOM,
                 data = Humidity(updateTwinEvent.data.patch[0].value as Int),
                 dateTime = updateTwinEvent.eventDateTime
             )
             LUMINOSITY.path -> RoomEvent(
                 key = EventKey.LUMINOSITY_EVENT,
                 roomId = updateTwinEvent.id,
+                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id)
+                    ProcessData.RoomType.OPERATING_ROOM
+                else ProcessData.RoomType.PRE_OPERATING_ROOM,
                 data = Luminosity((updateTwinEvent.data.patch[0].value as Number).toDouble(), LuminosityUnit.LUX),
                 dateTime = updateTwinEvent.eventDateTime
             )
@@ -92,6 +102,9 @@ class UpdateEventParser {
                 RoomEvent(
                     key = EventKey.PRESENCE_EVENT,
                     roomId = updateTwinEvent.id,
+                    roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id)
+                        ProcessData.RoomType.OPERATING_ROOM
+                    else ProcessData.RoomType.PRE_OPERATING_ROOM,
                     data = Presence(updateTwinEvent.data.patch[0].value as Boolean),
                     dateTime = updateTwinEvent.eventDateTime
                 )
