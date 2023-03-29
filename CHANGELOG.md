@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.0...1.7.1) (2023-03-29)
+
+
+### Bug Fixes
+
+* correct patient on operating table event ([8ed97af](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8ed97af96dc76507a1d86383d8442fa78be1850e))
+
 ## [1.7.0](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.6.0...1.7.0) (2023-03-28)
 
 
