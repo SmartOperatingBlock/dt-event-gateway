@@ -51,7 +51,7 @@ channels:
       message:
         oneOf:
           - "$ref": '#/components/messages/medicalDeviceUsageEvent'
-          - "$ref": "#/components/messages/processInfoEvent"
+          - "$ref": "#/components/messages/patientOnOperatingTableEvent"
           - "$ref": '#/components/messages/medicalTechnologyUsageEvent'
           - "$ref": '#/components/messages/patientTrackedEvent'
 
@@ -103,13 +103,13 @@ components:
       contentType: application/json
       payload:
         $ref: "#/components/schemas/medicalDeviceUsageEventPayload"
-    processInfoEvent:
-      name: processInfoEvent
-      title: The Process Informations Event
-      summary: the event about some informations on process.
+    patientOnOperatingTableEvent:
+      name: patientOnOperatingTableEvent
+      title: The Event of patient on operating table
+      summary: The Event of patient on operating table.
       contentType: application/json
       payload:
-        $ref: "#/components/schemas/processInfoEventPayload"
+        $ref: "#/components/schemas/patientOnOperatingTableEventPayload"
     medicalTechnologyUsageEvent:
       name: medicalTechnologyUsageEvent
       title: The Medical Technology Usage Event
@@ -235,7 +235,7 @@ components:
         dateTime:
           type: string
           description: the timestamp of the event.
-    processInfoEventPayload:
+    patientOnOperatingTableEventPayload:
       type: object
       properties:
         key:
@@ -243,7 +243,7 @@ components:
           description: The key of the event.
         data:
           type: object
-          $ref: "#/components/schemas/processInfo"
+          $ref: "#/components/schemas/patientOnOperatingTable"
         dateTime:
           type: string
           description: the timestamp of the event.
@@ -334,12 +334,9 @@ components:
           type: boolean
           description: true if the technology is in use, false otherwise.
 
-    processInfo:
+    patientOnOperatingTable:
       type: object
       properties:
-        info:
-          type: string
-          description: The information about the process.
         processId:
           type: string
           description: The id of the process.
