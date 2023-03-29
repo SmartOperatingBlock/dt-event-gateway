@@ -21,11 +21,10 @@ object ProcessData {
     data class MedicalDeviceUsage(val medicalDeviceID: String, val processId: String)
 
     /**
-     * An information for the surgical process.
-     * @param info the information of the process.
+     * The event of patient on operating table.
      * @param processId the id of the surgical process.
      */
-    data class ProcessInfo(val info: String, val processId: String)
+    data class PatientOnOperatingTable(val processId: String)
 
     /**
      * The event of medical technology usage given its [medicalTechnologyID].

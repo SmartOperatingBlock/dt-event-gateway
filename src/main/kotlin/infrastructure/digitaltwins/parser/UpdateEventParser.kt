@@ -28,7 +28,6 @@ import entities.process.PatientData.Saturation
 import entities.process.PatientData.SystolicPressure
 import entities.process.ProcessData
 import entities.process.ProcessData.MedicalTechnologyUsage
-import entities.process.ProcessData.ProcessInfo
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.MEDICAL_TECHNOLOGY_MODEL_ID
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.OPERATING_ROOM_MODEL_ID
 import infrastructure.digitaltwins.events.TwinProperties.DTModelID.PATIENT_MODEL_ID
@@ -117,7 +116,7 @@ class UpdateEventParser {
             IS_ON_OPERATING_TABLE.path -> {
                 ProcessEvent(
                     key = EventKey.PATIENT_ON_OB_EVENT,
-                    data = ProcessInfo("Patient on Operating Bed", updateTwinEvent.id),
+                    data = ProcessData.PatientOnOperatingTable(updateTwinEvent.id),
                     dateTime = updateTwinEvent.eventDateTime
                 )
             }
