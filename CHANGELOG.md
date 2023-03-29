@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.1...1.7.2) (2023-03-29)
+
+
+### Documentation
+
+* **asyncapi:** add documentation of patient on operating table event ([5ff243f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5ff243f7b1c17d659b3052f37e1365ae8e5a93ba))
+
 ## [1.7.1](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.0...1.7.1) (2023-03-29)
 
 
