@@ -1,7 +1,7 @@
 [versions]
 confluent = "7.3.3"
 kafka = "3.4.0"
-kotlin = "1.8.10"
+kotlin = "1.8.20"
 kotest = "5.5.5"
 
 [libraries]
