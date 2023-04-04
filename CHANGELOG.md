@@ -1,3 +1,12 @@
+## [1.7.3](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.2...1.7.3) (2023-04-04)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.8.20 ([7a53ef3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/7a53ef34de1ccc4e1eb67db1aff20574fd01a207))
+* **deps:** update confluent to v7.3.3 ([72a81d7](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/72a81d776a7ee7235166f1378576607abb2fac8e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.6 ([c8703ce](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/c8703ceee6ad68f277da8a3075adfffc74028251))
+
 ## [1.7.2](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.1...1.7.2) (2023-03-29)
 
 
