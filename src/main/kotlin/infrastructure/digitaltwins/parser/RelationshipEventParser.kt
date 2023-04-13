@@ -40,7 +40,7 @@ class RelationshipEventParser {
                         healthProfessionalId = createdRelationship.data.sourceId,
                         roomId = createdRelationship.data.targetId,
                         data = true,
-                        dateTime = createdRelationship.eventDateTime
+                        dateTime = createdRelationship.eventDateTime,
                     )
                     else -> EmptyEvent()
                 }
@@ -54,11 +54,13 @@ class RelationshipEventParser {
                             roomId = createdRelationship.data.targetId,
                             entered = true,
                             roomType =
-                            if (createdRelationship.data.targetModel == PRE_OPERATING_ROOM_MODEL_ID.id)
+                            if (createdRelationship.data.targetModel == PRE_OPERATING_ROOM_MODEL_ID.id) {
                                 PRE_OPERATING_ROOM
-                            else OPERATING_ROOM
+                            } else {
+                                OPERATING_ROOM
+                            },
                         ),
-                        dateTime = createdRelationship.eventDateTime
+                        dateTime = createdRelationship.eventDateTime,
                     )
                     else -> EmptyEvent()
                 }
@@ -69,9 +71,9 @@ class RelationshipEventParser {
                         key = EventKey.MEDICAL_DEVICE_USAGE_EVENT,
                         data = ProcessData.MedicalDeviceUsage(
                             createdRelationship.data.targetId,
-                            createdRelationship.data.sourceId
+                            createdRelationship.data.sourceId,
                         ),
-                        dateTime = createdRelationship.eventDateTime
+                        dateTime = createdRelationship.eventDateTime,
                     )
                     else -> EmptyEvent()
                 }
@@ -93,7 +95,7 @@ class RelationshipEventParser {
                             healthProfessionalId = deletedRelationship.data.sourceId,
                             roomId = deletedRelationship.data.targetId,
                             data = false,
-                            dateTime = deletedRelationship.eventDateTime
+                            dateTime = deletedRelationship.eventDateTime,
                         )
                     }
                     PATIENT_MODEL_ID.id -> {
@@ -104,11 +106,13 @@ class RelationshipEventParser {
                                 roomId = deletedRelationship.data.targetId,
                                 entered = false,
                                 roomType =
-                                if (deletedRelationship.data.targetModel == PRE_OPERATING_ROOM_MODEL_ID.id)
+                                if (deletedRelationship.data.targetModel == PRE_OPERATING_ROOM_MODEL_ID.id) {
                                     PRE_OPERATING_ROOM
-                                else OPERATING_ROOM
+                                } else {
+                                    OPERATING_ROOM
+                                },
                             ),
-                            dateTime = deletedRelationship.eventDateTime
+                            dateTime = deletedRelationship.eventDateTime,
                         )
                     }
                     else -> EmptyEvent()

@@ -41,11 +41,11 @@ object EnvironmentData {
 
     /** The temperature unit. **/
     enum class TemperatureUnit {
-        CELSIUS
+        CELSIUS,
     }
 
     /** The luminosity unit. **/
     enum class LuminosityUnit {
-        LUX
+        LUX,
     }
 }

@@ -27,7 +27,7 @@ class KafkaPublisher : EventPublisher<Event<*>> {
                     Invalid environment variable!
                     Check the documentation here:
                     https://github.com/SmartOperatingBlock/bootstrap")"""
-                        .trimIndent()
+                        .trimIndent(),
                 )
             }
         }
@@ -37,7 +37,7 @@ class KafkaPublisher : EventPublisher<Event<*>> {
         "bootstrap.servers" to System.getenv("BOOTSTRAP_SERVER_URL"),
         "schema.registry.url" to System.getenv("SCHEMA_REGISTRY_URL"),
         "key.serializer" to "org.apache.kafka.common.serialization.StringSerializer",
-        "value.serializer" to KafkaJsonSerializer::class.java
+        "value.serializer" to KafkaJsonSerializer::class.java,
     )
 
     private val producer: KafkaProducer<String, Event<*>> = KafkaProducer(producerProps)

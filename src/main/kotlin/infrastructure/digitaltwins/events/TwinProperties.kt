@@ -21,7 +21,7 @@ object TwinProperties {
         TEMPERATURE("/temperature"),
         HUMIDITY("/humidity"),
         LUMINOSITY("/luminosity"),
-        PRESENCE("/presence_inside")
+        PRESENCE("/presence_inside"),
     }
 
     /**
@@ -29,7 +29,7 @@ object TwinProperties {
      * @param path the property path.
      */
     enum class ProcessProperties(val path: String) {
-        MEDICAL_TECHNOLOGY("/is_in_use")
+        MEDICAL_TECHNOLOGY("/is_in_use"),
     }
 
     /**
@@ -57,7 +57,7 @@ object TwinProperties {
         PATIENT_MODEL_ID("dtmi:io:github:smartoperatingblock:Patient;1"),
         HEALTH_PROFESSIONAL_MODEL_ID("dtmi:io:github:smartoperatingblock:HealthProfessional;1"),
         SURGERY_BOOKING_MODEL_ID("dtmi:io:github:smartoperatingblock:SurgeryBooking;1"),
-        MEDICAL_TECHNOLOGY_MODEL_ID("dtmi:io:github:smartoperatingblock:MedicalTechnology;1")
+        MEDICAL_TECHNOLOGY_MODEL_ID("dtmi:io:github:smartoperatingblock:MedicalTechnology;1"),
     }
 
     /**

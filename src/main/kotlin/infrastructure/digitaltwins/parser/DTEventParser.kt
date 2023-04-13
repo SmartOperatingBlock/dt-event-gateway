@@ -36,22 +36,22 @@ class DTEventParser : EventParser<String> {
         return when (eventMap["eventType"]) {
             UPDATE.type -> {
                 updateEventParser.manageEvent(
-                    mapper.readValue(inputEvent, UpdateTwinEvent::class.java)
+                    mapper.readValue(inputEvent, UpdateTwinEvent::class.java),
                 )
             }
             CREATE.type -> {
                 lifecycleEventParser.manageEvent(
-                    mapper.readValue(inputEvent.replace("$", ""), LifecycleEvent::class.java)
+                    mapper.readValue(inputEvent.replace("$", ""), LifecycleEvent::class.java),
                 )
             }
             RELATIONSHIP_CREATE.type -> {
                 relationshipEventParser.manageCreatedRelationship(
-                    mapper.readValue(inputEvent.replace("$", ""), RelationshipEvent::class.java)
+                    mapper.readValue(inputEvent.replace("$", ""), RelationshipEvent::class.java),
                 )
             }
             RELATIONSHIP_DELETE.type -> {
                 relationshipEventParser.manageDeletedRelationship(
-                    mapper.readValue(inputEvent.replace("$", ""), RelationshipEvent::class.java)
+                    mapper.readValue(inputEvent.replace("$", ""), RelationshipEvent::class.java),
                 )
             }
             else -> EmptyEvent()

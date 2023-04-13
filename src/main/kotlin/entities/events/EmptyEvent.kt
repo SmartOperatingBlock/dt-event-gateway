@@ -16,5 +16,5 @@ import entities.events.EventProperties.EventKey
 data class EmptyEvent(
     override val key: EventKey = EventKey.EMPTY_EVENT,
     override val data: Any = "EMPTY_DATA",
-    override val dateTime: String = "EMPTY_DATA"
+    override val dateTime: String = "EMPTY_DATA",
 ) : Event<Any>

@@ -20,7 +20,7 @@ import io.reactivex.rxjava3.disposables.Disposable
  */
 class EventService<in C>(
     private val eventPublisher: EventPublisher<Event<*>>,
-    private val eventConsumer: EventConsumer<C>
+    private val eventConsumer: EventConsumer<C>,
 ) {
 
     /**

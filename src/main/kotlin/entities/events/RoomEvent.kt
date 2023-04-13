@@ -29,6 +29,6 @@ data class RoomEvent<E : Any> (
 
     override val data: E,
 
-    override val dateTime: String
+    override val dateTime: String,
 
 ) : Event<E>
