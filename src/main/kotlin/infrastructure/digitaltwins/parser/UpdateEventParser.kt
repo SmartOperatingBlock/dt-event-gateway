@@ -73,39 +73,47 @@ class UpdateEventParser {
             TEMPERATURE.path -> RoomEvent(
                 key = EventKey.TEMPERATURE_EVENT,
                 roomId = updateTwinEvent.id,
-                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id)
+                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id) {
                     ProcessData.RoomType.OPERATING_ROOM
-                else ProcessData.RoomType.PRE_OPERATING_ROOM,
+                } else {
+                    ProcessData.RoomType.PRE_OPERATING_ROOM
+                },
                 data = Temperature((updateTwinEvent.data.patch[0].value as Number).toDouble(), TemperatureUnit.CELSIUS),
-                dateTime = updateTwinEvent.eventDateTime
+                dateTime = updateTwinEvent.eventDateTime,
             )
             HUMIDITY.path -> RoomEvent(
                 key = EventKey.HUMIDITY_EVENT,
                 roomId = updateTwinEvent.id,
-                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id)
+                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id) {
                     ProcessData.RoomType.OPERATING_ROOM
-                else ProcessData.RoomType.PRE_OPERATING_ROOM,
+                } else {
+                    ProcessData.RoomType.PRE_OPERATING_ROOM
+                },
                 data = Humidity(updateTwinEvent.data.patch[0].value as Int),
-                dateTime = updateTwinEvent.eventDateTime
+                dateTime = updateTwinEvent.eventDateTime,
             )
             LUMINOSITY.path -> RoomEvent(
                 key = EventKey.LUMINOSITY_EVENT,
                 roomId = updateTwinEvent.id,
-                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id)
+                roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id) {
                     ProcessData.RoomType.OPERATING_ROOM
-                else ProcessData.RoomType.PRE_OPERATING_ROOM,
+                } else {
+                    ProcessData.RoomType.PRE_OPERATING_ROOM
+                },
                 data = Luminosity((updateTwinEvent.data.patch[0].value as Number).toDouble(), LuminosityUnit.LUX),
-                dateTime = updateTwinEvent.eventDateTime
+                dateTime = updateTwinEvent.eventDateTime,
             )
             PRESENCE.path -> {
                 RoomEvent(
                     key = EventKey.PRESENCE_EVENT,
                     roomId = updateTwinEvent.id,
-                    roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id)
+                    roomType = if (updateTwinEvent.data.modelId == OPERATING_ROOM_MODEL_ID.id) {
                         ProcessData.RoomType.OPERATING_ROOM
-                    else ProcessData.RoomType.PRE_OPERATING_ROOM,
+                    } else {
+                        ProcessData.RoomType.PRE_OPERATING_ROOM
+                    },
                     data = Presence(updateTwinEvent.data.patch[0].value as Boolean),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             else -> EmptyEvent()
@@ -117,7 +125,7 @@ class UpdateEventParser {
                 ProcessEvent(
                     key = EventKey.PATIENT_ON_OB_EVENT,
                     data = ProcessData.PatientOnOperatingTable(updateTwinEvent.id),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             BODY_TEMPERATURE.path -> {
@@ -125,9 +133,9 @@ class UpdateEventParser {
                     key = EventKey.PATIENT_BODY_TEMPERATURE_UPDATE_EVENT,
                     data = PatientData(
                         updateTwinEvent.id,
-                        BodyTemperature((updateTwinEvent.data.patch[0].value as Number).toDouble())
+                        BodyTemperature((updateTwinEvent.data.patch[0].value as Number).toDouble()),
                     ),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             DIASTOLIC_PRESSURE.path -> {
@@ -135,9 +143,9 @@ class UpdateEventParser {
                     key = EventKey.PATIENT_DIASTOLIC_PRESSURE_UPDATE_EVENT,
                     data = PatientData(
                         updateTwinEvent.id,
-                        DiastolicPressure(updateTwinEvent.data.patch[0].value as Int)
+                        DiastolicPressure(updateTwinEvent.data.patch[0].value as Int),
                     ),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             SYSTOLIC_PRESSURE.path -> {
@@ -145,9 +153,9 @@ class UpdateEventParser {
                     key = EventKey.PATIENT_SYSTOLIC_PRESSURE_UPDATE_EVENT,
                     data = PatientData(
                         updateTwinEvent.id,
-                        SystolicPressure(updateTwinEvent.data.patch[0].value as Int)
+                        SystolicPressure(updateTwinEvent.data.patch[0].value as Int),
                     ),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             RESPIRATORY_RATE.path -> {
@@ -155,9 +163,9 @@ class UpdateEventParser {
                     key = EventKey.PATIENT_RESPIRATORY_RATE_UPDATE_EVENT,
                     data = PatientData(
                         updateTwinEvent.id,
-                        RespiratoryRate(updateTwinEvent.data.patch[0].value as Int)
+                        RespiratoryRate(updateTwinEvent.data.patch[0].value as Int),
                     ),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             SATURATION_PERCENTAGE.path -> {
@@ -165,9 +173,9 @@ class UpdateEventParser {
                     key = EventKey.PATIENT_SATURATION_UPDATE_EVENT,
                     data = PatientData(
                         updateTwinEvent.id,
-                        Saturation(updateTwinEvent.data.patch[0].value as Int)
+                        Saturation(updateTwinEvent.data.patch[0].value as Int),
                     ),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             HEARTBEAT.path -> {
@@ -175,9 +183,9 @@ class UpdateEventParser {
                     key = EventKey.PATIENT_HEARTBEAT_UPDATE_EVENT,
                     data = PatientData(
                         updateTwinEvent.id,
-                        Heartbeat(updateTwinEvent.data.patch[0].value as Int)
+                        Heartbeat(updateTwinEvent.data.patch[0].value as Int),
                     ),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             MEDICAL_TECHNOLOGY.path -> {
@@ -185,9 +193,9 @@ class UpdateEventParser {
                     key = EventKey.MEDICAL_TECHNOLOGY_USAGE_EVENT,
                     data = MedicalTechnologyUsage(
                         updateTwinEvent.id,
-                        updateTwinEvent.data.patch[0].value as Boolean
+                        updateTwinEvent.data.patch[0].value as Boolean,
                     ),
-                    dateTime = updateTwinEvent.eventDateTime
+                    dateTime = updateTwinEvent.eventDateTime,
                 )
             }
             else -> EmptyEvent()

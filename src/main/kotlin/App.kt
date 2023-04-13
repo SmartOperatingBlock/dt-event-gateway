@@ -17,7 +17,6 @@ import infrastructure.signalr.SignalRClient
  * The application launcher.
  */
 fun main() {
-
     val publisher: EventPublisher<Event<*>> = KafkaPublisher()
     val consumer: EventConsumer<String> = SignalRClient()
 

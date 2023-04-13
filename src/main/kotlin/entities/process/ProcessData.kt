@@ -43,7 +43,7 @@ object ProcessData {
         val patientId: String,
         val roomId: String,
         val entered: Boolean,
-        val roomType: RoomType
+        val roomType: RoomType,
     )
 
     /** The type of the room where the patient is tracked. **/

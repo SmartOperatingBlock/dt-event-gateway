@@ -46,7 +46,7 @@ object RelationshipEvents {
         /**
          * The model of the relationship target.
          */
-        val targetModel: String
+        val targetModel: String,
     )
 
     /**
@@ -75,6 +75,6 @@ object RelationshipEvents {
         /**
          * The date and time of the event.
          */
-        val eventDateTime: String
+        val eventDateTime: String,
     )
 }

@@ -38,9 +38,9 @@ class LifecycleEventParser {
                 SurgeryBookingEvent(
                     data = SurgeryBooking(
                         lifecycleTwinEvent.data["booking_date_time"].toString(),
-                        lifecycleTwinEvent.data["surgery_type"].toString()
+                        lifecycleTwinEvent.data["surgery_type"].toString(),
                     ),
-                    dateTime = lifecycleTwinEvent.eventDateTime
+                    dateTime = lifecycleTwinEvent.eventDateTime,
                 )
             }
             else -> EmptyEvent()

@@ -41,6 +41,6 @@ object EventProperties {
         EMPTY_EVENT(""),
         PATIENT_TRACKED_EVENT(processEvents),
         TRACKING_EVENT(trackingEvents),
-        SURGERY_BOOKINGS_EVENT(bookingEvents)
+        SURGERY_BOOKINGS_EVENT(bookingEvents),
     }
 }

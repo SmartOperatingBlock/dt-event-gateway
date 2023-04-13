@@ -46,6 +46,6 @@ object LifecycleEvents {
         /**
          * The date and time of the event.
          */
-        val eventDateTime: String
+        val eventDateTime: String,
     )
 }
