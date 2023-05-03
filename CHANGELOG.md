@@ -1,3 +1,10 @@
+## [1.7.6](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.5...1.7.6) (2023-05-03)
+
+
+### Bug Fixes
+
+* send patient on operating table event only if value is true ([d28a03f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d28a03f0eef133ca342df14baa8dda5a0a4de057))
+
 ## [1.7.5](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.4...1.7.5) (2023-05-03)
 
 
