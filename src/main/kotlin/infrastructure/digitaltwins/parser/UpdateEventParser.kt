@@ -122,11 +122,15 @@ class UpdateEventParser {
     private fun manageProcessEvents(updateTwinEvent: UpdateEvents.UpdateTwinEvent): Event<Any> =
         when (updateTwinEvent.data.patch[0].path) {
             IS_ON_OPERATING_TABLE.path -> {
-                ProcessEvent(
-                    key = EventKey.PATIENT_ON_OB_EVENT,
-                    data = ProcessData.PatientOnOperatingTable(updateTwinEvent.id),
-                    dateTime = updateTwinEvent.eventDateTime,
-                )
+                if (updateTwinEvent.data.patch[0].value as Boolean) {
+                    ProcessEvent(
+                        key = EventKey.PATIENT_ON_OB_EVENT,
+                        data = ProcessData.PatientOnOperatingTable(updateTwinEvent.id),
+                        dateTime = updateTwinEvent.eventDateTime,
+                    )
+                } else {
+                    EmptyEvent()
+                }
             }
             BODY_TEMPERATURE.path -> {
                 ProcessEvent(
