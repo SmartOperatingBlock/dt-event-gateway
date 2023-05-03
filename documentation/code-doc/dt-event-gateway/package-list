@@ -132,7 +132,7 @@ $dokka.location:entities.process/ProcessData.MedicalTechnologyUsage/inUse/#/Poin
 $dokka.location:entities.process/ProcessData.MedicalTechnologyUsage/medicalTechnologyID/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-medical-technology-usage/medical-technology-i-d.html
 $dokka.location:entities.process/ProcessData.PatientOnOperatingTable///PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-patient-on-operating-table/index.html
 $dokka.location:entities.process/ProcessData.PatientOnOperatingTable/PatientOnOperatingTable/#kotlin.String/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-patient-on-operating-table/-patient-on-operating-table.html
-$dokka.location:entities.process/ProcessData.PatientOnOperatingTable/processId/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-patient-on-operating-table/process-id.html
+$dokka.location:entities.process/ProcessData.PatientOnOperatingTable/patientId/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-patient-on-operating-table/patient-id.html
 $dokka.location:entities.process/ProcessData.PatientTracked///PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-patient-tracked/index.html
 $dokka.location:entities.process/ProcessData.PatientTracked/PatientTracked/#kotlin.String#kotlin.String#kotlin.Boolean#entities.process.ProcessData.RoomType/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-patient-tracked/-patient-tracked.html
 $dokka.location:entities.process/ProcessData.PatientTracked/entered/#/PointingToDeclaration/dt-event-gateway/entities.process/-process-data/-patient-tracked/entered.html
