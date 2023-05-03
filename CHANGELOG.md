@@ -1,3 +1,15 @@
+## [1.7.5](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.4...1.7.5) (2023-05-03)
+
+
+### Bug Fixes
+
+* use patientId instead on processId in patient on ob event ([b657ca4](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/b657ca4fc2b79742f61bd9979890906428c05bb4))
+
+
+### Dependency updates
+
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.7 ([8f37c56](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8f37c56d93e8310263794209abaac6894cddc70d))
+
 ## [1.7.4](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.3...1.7.4) (2023-04-27)
 
 
