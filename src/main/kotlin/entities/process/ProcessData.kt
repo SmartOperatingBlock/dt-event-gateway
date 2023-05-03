@@ -22,9 +22,9 @@ object ProcessData {
 
     /**
      * The event of patient on operating table.
-     * @param processId the id of the surgical process.
+     * @param patientId the id of the Patient..
      */
-    data class PatientOnOperatingTable(val processId: String)
+    data class PatientOnOperatingTable(val patientId: String)
 
     /**
      * The event of medical technology usage given its [medicalTechnologyID].
