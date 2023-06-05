@@ -13,7 +13,7 @@ import entities.events.Event
 /**
  * The parser has the responsibility to parse the input event in order to propagate the correct event to microservices.
  */
-interface EventParser<in E> {
+fun interface EventParser<in E> {
 
     /**
      * The function to parse the event.
