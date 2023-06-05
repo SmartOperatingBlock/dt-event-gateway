@@ -11,7 +11,7 @@ package application.presenter
 /**
  * The publisher of events to the microservices.
  */
-interface EventPublisher<E> {
+fun interface EventPublisher<E> {
 
     /**
      * Publish the event.
