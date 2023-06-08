@@ -1,3 +1,36 @@
+## [1.7.7](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.6...1.7.7) (2023-06-08)
+
+
+### Build and continuous integration
+
+* **deps:** update codecov/codecov-action action to v3.1.4 ([cca3e3a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/cca3e3a7504bbba68818f68684ef3b67dc0303df))
+* **deps:** update smartoperatingblock/documentation-ghp-action action to v1.1.0 ([957736e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/957736e246769dd327b6f43b61c093e2cad484d1))
+
+
+### General maintenance
+
+* make event parser interface functional ([5840215](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5840215b7b98e92aeb241145da9a5698b8235d03))
+* make event publisher interface functional ([0d7ea5a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0d7ea5ac3bea027235bedb0cc9c6d1941dd57ae4))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.8.22 ([371f7b3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/371f7b3f4c4df798b3c71c80bf41c159389107e0))
+* **deps:** update alpine docker tag to v3.18 ([3975fc6](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/3975fc6d445eb461526d505d60ad617c2ce8cf52))
+* **deps:** update confluent to v7.4.0 ([41b0b8d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/41b0b8d37a6fc79cd15201a32adafb4d1159f9c4))
+* **deps:** update dependency com.fasterxml.jackson.module:jackson-module-kotlin to v2.15.1 ([0d771ac](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0d771acf72b13ee78bc2aa611e1b2b4f1a10d823))
+* **deps:** update dependency com.fasterxml.jackson.module:jackson-module-kotlin to v2.15.2 ([e7cf37a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e7cf37ad63416794380989d02a13dde32c00e0fd))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.27 ([29986ac](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/29986acce0782bfba9b28847322349eed7c66f54))
+* **deps:** update kafka to v3.4.1 ([5d27eb3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5d27eb3fbcc764f9c2dcb4f1ee47b1755a1c7118))
+* **deps:** update kotest to v5.6.2 ([d9e26bf](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d9e26bfbc399c98012f3d277d28988b360caeed7))
+* **deps:** update plugin com.gradle.enterprise to v3.13.1 ([ff3ac2a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ff3ac2ae18c3b7a9e39cec9a9101b07f7976a093))
+* **deps:** update plugin com.gradle.enterprise to v3.13.3 ([81bfb1f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/81bfb1f235f62067624fbfa25bc1f25fdbceedf6))
+* **deps:** update plugin kotlin-qa to v0.41.0 ([5de0cd1](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5de0cd12d03a693f5ae6403a5cdc6a80cb99c9dd))
+* **deps:** update plugin kotlin-qa to v0.42.0 ([1662e0f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/1662e0f6e89f1c414257b40a7d1f036afb50bae6))
+* **deps:** update plugin kotlin-qa to v0.43.0 ([d4b118d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d4b118d79776b413e858c8c87f588636346628e4))
+* **deps:** update plugin kotlin-qa to v0.44.0 ([450581e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/450581eb68aee23f9c44f2218f0bdf1c5a5022d4))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.8 ([dc8d756](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/dc8d7560dce8bf05b119e2bbf90494a67e394f26))
+
 ## [1.7.6](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.5...1.7.6) (2023-05-03)
 
 
