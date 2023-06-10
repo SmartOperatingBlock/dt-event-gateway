@@ -1,3 +1,16 @@
+## [1.7.8](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.7...1.7.8) (2023-06-10)
+
+
+### Build and continuous integration
+
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.1 ([e67049e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e67049e05338a8732d521ae889fdde21d8e10f5e))
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.2 ([6426371](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/642637144b2a2f8591866ec19dc5a84ef951de36))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.8.20 ([76e16d9](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/76e16d9e2e3767db198516827053e54f423770f4))
+
 ## [1.7.7](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.6...1.7.7) (2023-06-08)
 
 
