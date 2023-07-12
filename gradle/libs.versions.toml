@@ -18,7 +18,7 @@ kotest-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kote
 kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotest" }
 reactivex = { module = "io.reactivex.rxjava3:rxkotlin", version = "3.0.1" }
-signalr = { module = "com.microsoft.signalr:signalr", version = "7.0.8" }
+signalr = { module = "com.microsoft.signalr:signalr", version = "7.0.9" }
 
 [bundles]
 kotlin-testing = ["archunit","kotest-junit5", "kotest-assertions-core", "kotest-assertions-core-jvm"]
