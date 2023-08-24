@@ -1,5 +1,5 @@
 [versions]
-confluent = "7.4.1"
+confluent = "7.5.0"
 kafka = "6.2.11-ce"
 kotlin = "1.9.10"
 kotest = "5.6.2"
