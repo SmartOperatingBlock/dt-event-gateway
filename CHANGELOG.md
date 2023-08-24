@@ -1,3 +1,32 @@
+## [1.7.10](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.9...1.7.10) (2023-08-24)
+
+
+### Build and continuous integration
+
+* **deps:** update gradle/wrapper-validation-action action to v1.1.0 ([510470e](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/510470ec876fd3e3287857e6954025c6ff8bdae5))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.9.10 ([2d9cbc5](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/2d9cbc51381dae5b109e5bd60ffe5f164b6356eb))
+* **deps:** update confluent to v7.4.1 ([0be09b1](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0be09b1d3f4842e5f822a15864aa01ac8edc43ae))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.10 ([a6b2e48](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a6b2e4832d2cc7ea0361e7c134c465179069b93a))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.11 ([2786591](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/278659146172e1c972ed388c1ad177fe79003932))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.9 ([aaf6af1](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/aaf6af1f55298b9a03dc4ae3f0e88ba8f5538b77))
+* **deps:** update dependency com.microsoft.signalr:signalr to v7.0.10 ([e4f3c76](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e4f3c76840f72eaeb0a848e50885cfa9e664126a))
+* **deps:** update dependency com.microsoft.signalr:signalr to v7.0.9 ([d5b55b5](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/d5b55b559d889f04bfce5af4004233f8fb9e50ee))
+* **deps:** update dependency com.tngtech.archunit:archunit-junit5 to v1.1.0 ([279713d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/279713d010c4f71f671794d575c3c2a008797a87))
+* **deps:** update dependency gradle to v8.2.1 ([6228154](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6228154094bba8d65d54e48ea596bac761d80efd))
+* **deps:** update dependency gradle to v8.3 ([4d9a1a3](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/4d9a1a304056f0dec838b3e1278f7647baec5f30))
+* **deps:** update kafka to v6.2.11-ce ([eaf8e97](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/eaf8e974368a92a348805de94b0a7cd1b4f571c5))
+* **deps:** update node.js to 18.17 ([f07a132](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/f07a1325580bd486c2e5756639abb85906f933fc))
+* **deps:** update plugin com.gradle.enterprise to v3.14 ([a3ce329](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a3ce329cd6a2c9af57c0037baf52f7cb9b36757a))
+* **deps:** update plugin com.gradle.enterprise to v3.14.1 ([8e7e7bb](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8e7e7bb722610deff28cf11dedd31ae48b6a1eb5))
+* **deps:** update plugin kotlin-qa to v0.47.0 ([85f867d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/85f867d133d191f642bc698111fdc741a4539354))
+* **deps:** update plugin kotlin-qa to v0.47.1 ([ef17230](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ef17230d484c36d294f85b7d8c8ff0c01990d5fa))
+* **deps:** update plugin kotlin-qa to v0.48.0 ([0aebcef](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0aebcef6db1352c9d2f6a8ca7d59aa4417181140))
+* **deps:** update plugin kotlin-qa to v0.49.0 ([f5e8f11](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/f5e8f11922a7dbdf485b1657730c50390af119a6))
+
 ## [1.7.9](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.8...1.7.9) (2023-07-07)
 
 
