@@ -1,3 +1,24 @@
+## [1.7.11](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.10...1.7.11) (2023-09-07)
+
+
+### Dependency updates
+
+* **deps:** update confluent to v7.5.0 ([40d7c83](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/40d7c8313fdc951a067f5358c84df90da6ece0a3))
+* **deps:** update kotest to v5.7.0 ([a294ac4](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a294ac4e591a9dc6f067ab2fea0dce8e1aae3059))
+* **deps:** update plugin kotlin-qa to v0.49.1 ([8ba95a7](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8ba95a7a573b02bc9601b5503743affb63316644))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.10 ([dedec16](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/dedec16c86b6a8a47b26b26361cb17b26c5b392e))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4 ([a421663](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a4216635262c6b53aa907702cd0dd94e1a2ba78f))
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.4 ([5fe7da9](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5fe7da9e8af44de6f431d9d26b32926a3216c5cf))
+
+
+### Documentation
+
+* **deps:** update plugin dokka to v1.9.0 ([ecbd1d1](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/ecbd1d1237a71af8c13306a4e0ee18d7deece614))
+
 ## [1.7.10](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.9...1.7.10) (2023-08-24)
 
 
