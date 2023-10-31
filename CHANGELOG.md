@@ -1,3 +1,20 @@
+## [1.7.13](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.12...1.7.13) (2023-10-31)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4 ([fc8b5d7](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/fc8b5d7375f25bc6fac777319e7b9015467b2e10))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.9.20 ([8b64a92](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8b64a92ca41b4a0a411f849aa0c95a1052a26e3e))
+* **deps:** update dependency com.microsoft.signalr:signalr to v7.0.13 ([6d08ab0](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6d08ab0f6661bc804fa3adaeaa72c6bf3f0fadb4))
+* **deps:** update node.js to 20.9 ([e1eb4ea](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e1eb4ea32e7308a0de468c746e062aa0338740e3))
+* **deps:** update node.js to v20 ([1500da8](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/1500da8916ecd76d9ab38405f356bd8a474c5a1e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.12 ([2586d40](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/2586d401acbc93f695904429c9e92bd8867eabff))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.13 ([a7a6d11](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a7a6d1115d7ce4b40b49f9341325ebb29fb0fcfa))
+
 ## [1.7.12](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.11...1.7.12) (2023-10-20)
 
 
