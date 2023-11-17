@@ -7,7 +7,7 @@ kotest = "5.8.0"
 [libraries]
 archunit = { module = "com.tngtech.archunit:archunit-junit5", version = "1.2.0" }
 logback = { module = "ch.qos.logback:logback-classic", version = "1.4.11" }
-jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version = "2.15.3" }
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version = "2.16.0" }
 kafka-clients = { module = "org.apache.kafka:kafka-clients", version.ref = "kafka"}
 kafka-connect = { module = "org.apache.kafka:connect-runtime", version.ref = "kafka"}
 kafka-json = { module = "io.confluent:kafka-json-serializer", version.ref = "confluent"}
