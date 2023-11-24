@@ -1,3 +1,24 @@
+## [1.7.14](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.13...1.7.14) (2023-11-24)
+
+
+### Build and continuous integration
+
+* **deps:** update smartoperatingblock/release-and-delivery-action action to v1.0.11 ([a29fe03](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/a29fe03026788ebc093e30a47a3348a06b1d58e4))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.9.21 ([640f55c](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/640f55cb8dae6cbbbb54069dc016f12614d11a8b))
+* **deps:** update confluent to v7.5.2 ([27a0e95](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/27a0e957d5228d2b71e7996aaf145ca897ca7dda))
+* **deps:** update dependency com.fasterxml.jackson.module:jackson-module-kotlin to v2.16.0 ([bfc0404](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/bfc04045d6d9a6ce4f6bec14e3363c0119f83fa4))
+* **deps:** update dependency com.microsoft.signalr:signalr to v7.0.14 ([6727110](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/67271108a67295eab8ce1d9f52061e05abab6f4b))
+* **deps:** update dependency com.microsoft.signalr:signalr to v8 ([8e8eaf0](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8e8eaf049c2b53b3851562304022d5c7d027043a))
+* **deps:** update dependency com.tngtech.archunit:archunit-junit5 to v1.2.0 ([7472860](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/74728605a2e311b259c858fdc893e5753092f303))
+* **deps:** update kotest to v5.8.0 ([6a1a572](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/6a1a572a2816a7043aaf807c5d130192c5f0e255))
+* **deps:** update node.js to 20.10 ([0626b9f](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/0626b9f78299216cfbe403496d64ddb0761e6a57))
+* **deps:** update plugin kotlin-qa to v0.54.0 ([8e0dd2d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8e0dd2d2e7ebb28f5bdef481f8032a4c569cbc9f))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.14 ([fa6c355](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/fa6c3555d07e3a9a3b3a19242f567b73db06ea73))
+
 ## [1.7.13](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.12...1.7.13) (2023-10-31)
 
 
