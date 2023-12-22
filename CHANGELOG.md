@@ -1,3 +1,32 @@
+## [1.7.15](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.14...1.7.15) (2023-12-22)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v4 ([1bf2bf4](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/1bf2bf40e0bd0e46eff0e4e7db1dba8cc7e95e60))
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-stdlib to v1.9.22 ([2259a12](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/2259a1212698cb9ccb7848f9422f28c2749604b3))
+* **deps:** update alpine docker tag to v3.19 ([556436d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/556436d513f7c75fdcfa789c7ffceac5d7822b13))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.12 ([493b510](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/493b51094d40ec6459e773424661c0f687d56fd2))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.13 ([bc3c941](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/bc3c941719cb490acc1eb8ba362cf93f79165cb6))
+* **deps:** update dependency ch.qos.logback:logback-classic to v1.4.14 ([fd03578](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/fd03578901f1da85cdb8dcc67b6f84b46f0f713b))
+* **deps:** update dependency com.tngtech.archunit:archunit-junit5 to v1.2.1 ([2e725bc](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/2e725bc8510b36197fc7931a3cabd402ea241db8))
+* **deps:** update dependency gradle to v8.5 ([18e1392](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/18e1392e9959550eebf20a1124c406f70c61aa9b))
+* **deps:** update kafka to v6.2.13-ce ([c15f34b](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/c15f34b50d2a099e4a09e28df221b70c658a95f2))
+* **deps:** update plugin com.gradle.enterprise to v3.16 ([da5ee89](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/da5ee8985b5f5d3683e37b327fdeb83c77e9e4dd))
+* **deps:** update plugin com.gradle.enterprise to v3.16.1 ([8b4c18a](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/8b4c18aa8799c2b41eceb6fbe18e9bbc5be01b90))
+* **deps:** update plugin kotlin-qa to v0.54.1 ([59d4f3d](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/59d4f3d58ab419bc9faed29e0e96adaf2121e747))
+* **deps:** update plugin kotlin-qa to v0.55.0 ([5f140a0](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/5f140a0abe9b8baf45b4a67d05e2becca0b15601))
+* **deps:** update plugin kotlin-qa to v0.55.1 ([cf7aeae](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/cf7aeae75f98422518a23589c92b20e81388e4af))
+* **deps:** update plugin kotlin-qa to v0.55.2 ([831f8dc](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/831f8dc379b964b3866bca712de0cfb441522f1e))
+* **deps:** update plugin kotlin-qa to v0.56.0 ([e375900](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e375900d9b7b43c879166694d53d7a1d18cbd261))
+* **deps:** update plugin kotlin-qa to v0.57.0 ([e8bdcd4](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/e8bdcd4fdf113582650e8dff77ea7cfc8d732c9d))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.15 ([4405931](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/44059310ac702e58335fc5ff6395a937cb9b4192))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.16 ([121bf97](https://github.com/SmartOperatingBlock/dt-event-gateway/commit/121bf97d8950a788c99d67335fb1c6162d37c8c0))
+
 ## [1.7.14](https://github.com/SmartOperatingBlock/dt-event-gateway/compare/1.7.13...1.7.14) (2023-11-24)
 
 
