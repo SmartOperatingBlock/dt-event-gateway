@@ -24,7 +24,7 @@ signalr = { module = "com.microsoft.signalr:signalr", version = "8.0.1" }
 kotlin-testing = ["archunit","kotest-junit5", "kotest-assertions-core", "kotest-assertions-core-jvm"]
 
 [plugins]
-dokka = { id ="org.jetbrains.dokka", version = "1.9.10" }
+dokka = { id ="org.jetbrains.dokka", version = "1.9.20" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-qa = { id = "org.danilopianini.gradle-kotlin-qa", version = "0.58.0" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
