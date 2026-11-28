@@ -2,7 +2,7 @@
 confluent = "7.5.3"
 kafka = "6.2.14-ce"
 kotlin = "1.9.22"
-kotest = "5.8.0"
+kotest = "5.9.1"
 
 [libraries]
 archunit = { module = "com.tngtech.archunit:archunit-junit5", version = "1.2.1" }
